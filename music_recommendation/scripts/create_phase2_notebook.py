@@ -19,7 +19,7 @@ import torch
 from IPython.display import display,Image
 ROOT=Path.cwd().resolve()
 if not (ROOT/'src/musicrec').is_dir(): ROOT=ROOT.parent
-assert (ROOT/'src/musicrec').is_dir()
+if not (ROOT/'src/musicrec').is_dir(): raise RuntimeError('Project root not found')
 sys.path.insert(0,str(ROOT/'src'));sys.path.insert(0,str(ROOT/'scripts'))
 from musicrec.phase2 import run_phase2
 from replay_phase2 import replay
@@ -34,7 +34,7 @@ print('CPU only; no test evaluation')'''),
 if RETRAIN_ALL:
     runs=run_phase2(ROOT,repeat_seeds=True,max_epochs=24,every=4)
 else:
-    assert (ROOT/'outputs/phase2/status.json').is_file(), '没有已完成结果，请设 RETRAIN_ALL=True'
+    if not (ROOT/'outputs/phase2/status.json').is_file(): raise RuntimeError('没有已完成结果，请在独立实验副本训练')
     runs=pd.read_csv(ROOT/'outputs/phase2/all_runs.csv')
     print('此格没有重新训练，读取已保存的真实训练记录。下一节会独立重新评分。')
 display(runs[['family','lr','seed','selected_epoch','ndcg@10','recall@10','training_seconds','scoring_seconds']].round(6))'''),
@@ -66,7 +66,7 @@ for name in ['04_learning_curves.png','05_validation_comparison.png']:
 下格重新构建训练特征、读取安全NPZ参数、按全部验证用户与全目录候选重新排名。核对9个选中配置checkpoint的NDCG、Recall、Precision和覆盖率，误差超过1e−7则报错。没有读取test.csv。'''),
       nbf.v4.new_code_cell('''replay_checks=replay(ROOT)
 display(replay_checks)
-assert replay_checks.passed.all()'''),
+if not replay_checks.passed.all(): raise RuntimeError('Checkpoint replay failed')'''),
       nbf.v4.new_markdown_cell('''## 6. 分组与成本
 
 有冷目标用户的分组指标不是“只对冷艺人计算的召回率”。低活跃组样本少，不扩大解释。CPU训练耗时、完整评分耗时和验证搜索耗时是不同概念；这里记录的Linux秒数不是Windows性能承诺。'''),
@@ -80,7 +80,7 @@ print('测试指标仍未计算。')'''),
       nbf.v4.new_code_cell('''import subprocess
 test=subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-v'],cwd=ROOT,capture_output=True,text=True)
 print(test.stdout+test.stderr)
-assert test.returncode==0'''),
+test.check_returncode()'''),
       nbf.v4.new_markdown_cell('''## 8. 如何写真实的迭代结论
 
 把“提出假设”和“证据支持”分开：低秩/非线性/内容表示有理论动机，不代表一定超过强邻域基线。当前有限预算下如ItemCF仍领先，应如实保留它，而不是为了最后一个模型好看而改测试规则。

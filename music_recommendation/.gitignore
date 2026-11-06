@@ -1,5 +1,21 @@
+# Environments and interpreter caches
 .venv/
+venv/
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
+.ipython/
+.jupyter/
+.cache/
+.mplconfig/
 outputs/figures/.mplconfig/
+outputs/windows_native_verification/ipython/
+outputs/windows_native_verification/runtime/
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Reports and slides are outside this project-backup scope
+deliverables/

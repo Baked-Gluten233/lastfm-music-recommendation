@@ -61,7 +61,11 @@ py -3.12 -m venv .venv
 
 **验证边界：实际运行是 Linux + Python 3.12.14，不是 Windows 实测。** 已单独校验固定直接依赖存在 Windows CPython 3.12 / 通用 wheel；Windows 目标依赖解析结果另见 `outputs/windows_dependency_resolution.json` 与日志（解析的操作系统条件标记仍可能受 Linux 主机影响）。本环境无法启动需要本地通信的原生 Jupyter 内核，故 Notebook 通过 IPython 进程内按序执行所有真实代码格并捕获输出，不声称原生内核 Restart-and-Run-All 已通过。Windows 最终验收仍须在真实 Windows 执行上述测试和 Notebook。结果应对照 CSV 指标，浮点数允许极小数值误差，运行时间不应比较。
 
-已提供真正的Windows验收入口：`.\.venv\Scripts\python.exe scripts\verify_windows.py`。它只在实际Windows运行20项代码测试及三个原生Jupyter Notebook，把执行副本和状态写入 `outputs/windows_native_verification`；不会把Linux预检查标成Windows通过，也不再次测试集评分。还提供手动触发的可选GitHub Actions配置，**未推送、未触发、未验证通过**。`.gitattributes` 与JSON显式LF换行用于避免跨平台文本换行破坏冻结哈希。
+已提供 Windows 验收入口：`.\.venv\Scripts\python.exe scripts\verify_windows.py`，**仍未在真实 Windows 上验证通过**。它只在实际 Windows 执行单元测试及三个原生 Jupyter Notebook。测试和每本 Notebook 分别使用项目目录以外的独立临时副本；Notebook 从 `scripts/create*_notebook.py` 模板重新生成，不执行或覆盖随包已保存输出的原 Notebook。每本 Notebook 都从同一原始快照开始，阶段一重建的派生数据不会污染阶段三的冻结依据。原项目仅新增/更新 `outputs/windows_native_verification` 中的日志、执行结果和状态；不修改原数据、冻结证据或原 Notebook，不再次评分测试集。临时副本运行结束或失败后清理，需要额外磁盘空间。隔离用于避免本项目正常代码的意外覆盖，不是恶意代码安全沙箱。
+
+验收、数据一致性、最终聚合和 Notebook 模板中的重要检查使用显式异常，不依赖可被 `python -O` 删除的 `assert`。模板里的子进程测试失败会抛出异常并使执行非零退出。`tests/test_validation_safety.py` 用合成数据和模拟执行器检查副本隔离、失败传播与优化模式防护；这不是 Windows 或真实 Jupyter 内核验收。原已执行 Notebook 保留历史输出，尚未重新执行；其历史代码不作为新的安全验收入口。手动在原目录运行阶段一/二脚本仍会覆盖派生证据，请用独立副本。
+
+项目的 `.github/workflows/` 保留可选 GitHub Actions 配置；本仓库把完整项目放在 `music_recommendation/` 子目录，因此该配置不在仓库顶层，未启用、未触发，不能因已备份就声称工作流通过。`.gitattributes` 与 JSON 显式 LF 换行用于避免跨平台文本换行破坏冻结哈希。
 
 如下载失败，已随包提供原始数据，`download_data.py` 会先校验已有压缩包再解压。不要关闭 TLS 校验或绕过机构网络限制。若需要手动下载，只用 [GroupLens 官方页面](https://grouplens.org/datasets/hetrec-2011/) 的 Last.fm 链接，保存到 `data/raw/hetrec2011-lastfm-2k.zip`，再运行下载脚本。校验不符时脚本会停止。
 

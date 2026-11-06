@@ -65,7 +65,7 @@ for case in cases:
 尚未验证Windows实机、原生Jupyter内核、线上效果、多随机拆分与更大调参空间；不得写成已完成。AI生成/辅助部分和成员实际人工工作必须清楚区分。'''),
         nbf.v4.new_code_cell('''tests=subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-v'],cwd=ROOT,capture_output=True,text=True)
 print(tests.stdout+tests.stderr)
-assert tests.returncode==0
+tests.check_returncode()
 print('这里只运行代码/小型合成数据测试，没有再次评价保留测试集。')'''),
     ]
     n=nbf.v4.new_notebook(cells=cells,metadata={'kernelspec':{'display_name':'Python 3 (ipykernel)','name':'python3','language':'python'},'language_info':{'name':'python','version':'3.12'}})

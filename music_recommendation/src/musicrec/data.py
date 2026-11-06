@@ -8,6 +8,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix
+from .validation import require
 
 DATA_URL = "https://files.grouplens.org/datasets/hetrec2011/hetrec2011-lastfm-2k.zip"
 ARCHIVE_SHA256 = "6738f48195667ff03caaab4d32ca9a3133d8cc026b7c3cdaf6ce1010e913c59c"
@@ -91,11 +92,11 @@ def split_interactions(frame: pd.DataFrame, seed: int = 42) -> dict[str, pd.Data
     result = {s: pd.concat(v, ignore_index=True).sort_values(["userID", "artistID"]).reset_index(drop=True)
               if v else frame.iloc[:0].copy() for s, v in parts.items()}
     pair_sets = {s: set(zip(f.userID, f.artistID)) for s, f in result.items()}
-    assert not pair_sets["train"] & pair_sets["validation"]
-    assert not pair_sets["train"] & pair_sets["test"]
-    assert not pair_sets["validation"] & pair_sets["test"]
-    assert sum(map(len, result.values())) == len(frame)
-    assert set(result["validation"].userID).issubset(result["train"].userID)
+    require(not pair_sets["train"] & pair_sets["validation"], 'Consistency check failed: not pair_sets["train"] & pair_sets["validation"]')
+    require(not pair_sets["train"] & pair_sets["test"], 'Consistency check failed: not pair_sets["train"] & pair_sets["test"]')
+    require(not pair_sets["validation"] & pair_sets["test"], 'Consistency check failed: not pair_sets["validation"] & pair_sets["test"]')
+    require(sum(map(len, result.values())) == len(frame), 'Consistency check failed: sum(map(len, result.values())) == len(frame)')
+    require(set(result["validation"].userID).issubset(result["train"].userID), 'Consistency check failed: set(result["validation"].userID).issubset(result["train"].userID)')
     return result
 
 
@@ -108,5 +109,5 @@ def indexed_matrix(train: pd.DataFrame, artists: pd.DataFrame):
     cols = train.artistID.map(item_index).to_numpy()
     matrix = csr_matrix((np.ones(len(train), dtype=np.float64), (rows, cols)),
                         shape=(len(user_ids), len(artist_ids)))
-    assert matrix.nnz == len(train)
+    require(matrix.nnz == len(train), 'Consistency check failed: matrix.nnz == len(train)')
     return matrix, user_ids, artist_ids, user_index, item_index

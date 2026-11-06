@@ -22,7 +22,7 @@ import subprocess
 ROOT = Path.cwd().resolve()
 if not (ROOT / 'src' / 'musicrec').is_dir():
     ROOT = ROOT.parent
-assert (ROOT / 'src' / 'musicrec').is_dir(), '请从项目根目录或 notebooks 目录启动'
+if not (ROOT / 'src' / 'musicrec').is_dir(): raise RuntimeError('请从项目根目录或 notebooks 目录启动')
 sys.path.insert(0, str(ROOT / 'src'))
 print('Python:', sys.version)
 print('Interpreter:', sys.executable)
@@ -87,7 +87,7 @@ print(experiment['uncertainty']['caution'])
         nbf.v4.new_code_cell("""tests = subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'],
                        cwd=ROOT, capture_output=True, text=True)
 print(tests.stdout + tests.stderr)
-assert tests.returncode == 0
+tests.check_returncode()
 print('Windows 实际运行:', experiment['runtime']['windows_execution_verified'])
 """),
         nbf.v4.new_markdown_cell("""## 7. 当前能说什么，下一步做什么
