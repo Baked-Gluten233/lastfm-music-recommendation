@@ -1,0 +1,24 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch==2.9.1
+  Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.9.1%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+Collecting filelock (from torch==2.9.1)
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Requirement already satisfied: typing-extensions>=4.10.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from torch==2.9.1) (4.16.0)
+Requirement already satisfied: setuptools in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from torch==2.9.1) (84.2.1)
+Requirement already satisfied: sympy>=1.13.3 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from torch==2.9.1) (1.14.0)
+Collecting networkx>=2.5.1 (from torch==2.9.1)
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Requirement already satisfied: jinja2 in ./.venv/lib/python3.12/site-packages (from torch==2.9.1) (3.1.6)
+Collecting fsspec>=0.8.5 (from torch==2.9.1)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from sympy>=1.13.3->torch==2.9.1) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./.venv/lib/python3.12/site-packages (from jinja2->torch==2.9.1) (3.0.4)
+Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.9.1%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (184.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.4/184.4 MB 50.0 MB/s eta 0:00:00
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 19.3 MB/s eta 0:00:00
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+Installing collected packages: networkx, fsspec, filelock, torch
+Successfully installed filelock-4.2.4 fsspec-2026.9.0 networkx-3.7 torch-2.9.1+cpu

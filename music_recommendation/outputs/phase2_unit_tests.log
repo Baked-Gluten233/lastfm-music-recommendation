@@ -1,0 +1,27 @@
+test_heldout_pair_tags_have_no_effect (test_neural.ContentTests.test_heldout_pair_tags_have_no_effect) ... ok
+test_no_content_gate (test_neural.ContentTests.test_no_content_gate) ... ok
+test_vocab_threshold_and_unknown_vector (test_neural.ContentTests.test_vocab_threshold_and_unknown_vector) ... ok
+test_bpr_formula_and_gradients (test_neural.NeuralTests.test_bpr_formula_and_gradients) ... ok
+test_cold_scores_and_batch_invariance (test_neural.NeuralTests.test_cold_scores_and_batch_invariance) ... ok
+test_content_towers_identical_content_and_factorization (test_neural.NeuralTests.test_content_towers_identical_content_and_factorization) ... ok
+test_negative_sampler_only_train_information (test_neural.NeuralTests.test_negative_sampler_only_train_information) ... ok
+test_neumf_separate_branches_train (test_neural.NeuralTests.test_neumf_separate_branches_train) ... ok
+test_training_checkpoint_reproducibility (test_neural.NeuralTests.test_training_checkpoint_reproducibility) ... bpr_mf_lr0.01_seed123 epoch 01: loss=0.69169, validation NDCG@10=0.666667, scoring=0.00s
+bpr_mf_lr0.01_seed123 epoch 02: loss=0.69028, validation NDCG@10=0.666667, scoring=0.00s
+bpr_mf_lr0.01_seed123 epoch 01: loss=0.69169, validation NDCG@10=0.666667, scoring=0.00s
+bpr_mf_lr0.01_seed123 epoch 02: loss=0.69028, validation NDCG@10=0.666667, scoring=0.00s
+ok
+test_cold_targets_retained (test_protocol.ProtocolTests.test_cold_targets_retained) ... ok
+test_cosine_shrinkage_integer_and_cold (test_protocol.ProtocolTests.test_cosine_shrinkage_integer_and_cold) ... ok
+test_directed_neighbor_orientation (test_protocol.ProtocolTests.test_directed_neighbor_orientation) ... ok
+test_exact_metrics (test_protocol.ProtocolTests.test_exact_metrics) ... ok
+test_invalid_metric_inputs (test_protocol.ProtocolTests.test_invalid_metric_inputs) ... ok
+test_neighbor_and_ks_validation (test_protocol.ProtocolTests.test_neighbor_and_ks_validation) ... ok
+test_overlap_rejected (test_protocol.ProtocolTests.test_overlap_rejected) ... ok
+test_seen_mask_and_ties (test_protocol.ProtocolTests.test_seen_mask_and_ties) ... ok
+test_split_disjoint_complete_and_order_invariant (test_protocol.ProtocolTests.test_split_disjoint_complete_and_order_invariant) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.715s
+
+OK

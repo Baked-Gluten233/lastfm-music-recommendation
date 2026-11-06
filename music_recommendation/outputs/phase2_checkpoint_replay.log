@@ -1,0 +1,9 @@
+Replayed: bpr_mf_lr0.005_seed42 NDCG@10=0.081823
+Replayed: bpr_mf_lr0.005_seed43 NDCG@10=0.078669
+Replayed: bpr_mf_lr0.005_seed44 NDCG@10=0.079097
+Replayed: neumf_lr0.003_seed42 NDCG@10=0.081037
+Replayed: neumf_lr0.003_seed43 NDCG@10=0.079634
+Replayed: neumf_lr0.003_seed44 NDCG@10=0.084718
+Replayed: content_two_tower_lr0.003_seed42 NDCG@10=0.103220
+Replayed: content_two_tower_lr0.003_seed43 NDCG@10=0.106519
+Replayed: content_two_tower_lr0.003_seed44 NDCG@10=0.099688

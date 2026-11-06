@@ -1,0 +1,75 @@
+bpr_mf_lr0.005_seed42 epoch 04: loss=0.43773, validation NDCG@10=0.081823, scoring=0.13s
+bpr_mf_lr0.005_seed42 epoch 08: loss=0.43462, validation NDCG@10=0.076683, scoring=0.13s
+bpr_mf_lr0.005_seed42 epoch 12: loss=0.43364, validation NDCG@10=0.077826, scoring=0.15s
+bpr_mf_lr0.005_seed42 epoch 16: loss=0.43407, validation NDCG@10=0.073039, scoring=0.13s
+bpr_mf_lr0.01_seed42 epoch 04: loss=0.44034, validation NDCG@10=0.080823, scoring=0.15s
+bpr_mf_lr0.01_seed42 epoch 08: loss=0.43917, validation NDCG@10=0.075390, scoring=0.14s
+bpr_mf_lr0.01_seed42 epoch 12: loss=0.43777, validation NDCG@10=0.076069, scoring=0.13s
+bpr_mf_lr0.01_seed42 epoch 16: loss=0.43815, validation NDCG@10=0.071076, scoring=0.11s
+neumf_lr0.001_seed42 epoch 04: loss=0.43599, validation NDCG@10=0.054268, scoring=4.52s
+neumf_lr0.001_seed42 epoch 08: loss=0.41730, validation NDCG@10=0.050781, scoring=3.63s
+neumf_lr0.001_seed42 epoch 12: loss=0.40769, validation NDCG@10=0.052077, scoring=4.04s
+neumf_lr0.001_seed42 epoch 16: loss=0.38362, validation NDCG@10=0.052368, scoring=4.61s
+neumf_lr0.003_seed42 epoch 04: loss=0.43693, validation NDCG@10=0.049487, scoring=3.73s
+neumf_lr0.003_seed42 epoch 08: loss=0.40840, validation NDCG@10=0.052864, scoring=4.70s
+neumf_lr0.003_seed42 epoch 12: loss=0.35073, validation NDCG@10=0.079998, scoring=5.00s
+neumf_lr0.003_seed42 epoch 16: loss=0.30433, validation NDCG@10=0.079027, scoring=4.99s
+neumf_lr0.003_seed42 epoch 20: loss=0.27656, validation NDCG@10=0.081037, scoring=4.71s
+neumf_lr0.003_seed42 epoch 24: loss=0.25522, validation NDCG@10=0.077162, scoring=4.62s
+content_two_tower_lr0.001_seed42 epoch 04: loss=0.29133, validation NDCG@10=0.067159, scoring=0.14s
+content_two_tower_lr0.001_seed42 epoch 08: loss=0.21638, validation NDCG@10=0.088908, scoring=0.13s
+content_two_tower_lr0.001_seed42 epoch 12: loss=0.19118, validation NDCG@10=0.093652, scoring=0.13s
+content_two_tower_lr0.001_seed42 epoch 16: loss=0.17896, validation NDCG@10=0.100116, scoring=0.12s
+content_two_tower_lr0.001_seed42 epoch 20: loss=0.17366, validation NDCG@10=0.093035, scoring=0.15s
+content_two_tower_lr0.001_seed42 epoch 24: loss=0.17031, validation NDCG@10=0.095634, scoring=0.13s
+content_two_tower_lr0.003_seed42 epoch 04: loss=0.25980, validation NDCG@10=0.083659, scoring=0.13s
+content_two_tower_lr0.003_seed42 epoch 08: loss=0.21086, validation NDCG@10=0.096734, scoring=0.13s
+content_two_tower_lr0.003_seed42 epoch 12: loss=0.19574, validation NDCG@10=0.103220, scoring=0.14s
+content_two_tower_lr0.003_seed42 epoch 16: loss=0.18872, validation NDCG@10=0.101862, scoring=0.13s
+content_two_tower_lr0.003_seed42 epoch 20: loss=0.18585, validation NDCG@10=0.102745, scoring=0.13s
+content_two_tower_lr0.003_seed42 epoch 24: loss=0.18642, validation NDCG@10=0.092857, scoring=0.14s
+bpr_mf_lr0.005_seed43 epoch 04: loss=0.43747, validation NDCG@10=0.076098, scoring=0.12s
+bpr_mf_lr0.005_seed43 epoch 08: loss=0.43667, validation NDCG@10=0.078669, scoring=0.11s
+bpr_mf_lr0.005_seed43 epoch 12: loss=0.43498, validation NDCG@10=0.074923, scoring=0.12s
+bpr_mf_lr0.005_seed43 epoch 16: loss=0.43453, validation NDCG@10=0.074336, scoring=0.12s
+bpr_mf_lr0.005_seed43 epoch 20: loss=0.43528, validation NDCG@10=0.072986, scoring=0.11s
+bpr_mf_lr0.005_seed44 epoch 04: loss=0.43786, validation NDCG@10=0.079097, scoring=0.11s
+bpr_mf_lr0.005_seed44 epoch 08: loss=0.43457, validation NDCG@10=0.077879, scoring=0.12s
+bpr_mf_lr0.005_seed44 epoch 12: loss=0.43410, validation NDCG@10=0.074515, scoring=0.11s
+bpr_mf_lr0.005_seed44 epoch 16: loss=0.43473, validation NDCG@10=0.071566, scoring=0.12s
+neumf_lr0.003_seed43 epoch 04: loss=0.43830, validation NDCG@10=0.047267, scoring=5.25s
+neumf_lr0.003_seed43 epoch 08: loss=0.42065, validation NDCG@10=0.060669, scoring=4.44s
+neumf_lr0.003_seed43 epoch 12: loss=0.36732, validation NDCG@10=0.071020, scoring=3.80s
+neumf_lr0.003_seed43 epoch 16: loss=0.32113, validation NDCG@10=0.079279, scoring=2.99s
+neumf_lr0.003_seed43 epoch 20: loss=0.29209, validation NDCG@10=0.079456, scoring=3.45s
+neumf_lr0.003_seed43 epoch 24: loss=0.26737, validation NDCG@10=0.079634, scoring=3.16s
+neumf_lr0.003_seed44 epoch 04: loss=0.43530, validation NDCG@10=0.051279, scoring=3.29s
+neumf_lr0.003_seed44 epoch 08: loss=0.40221, validation NDCG@10=0.053139, scoring=3.95s
+neumf_lr0.003_seed44 epoch 12: loss=0.35495, validation NDCG@10=0.070379, scoring=3.60s
+neumf_lr0.003_seed44 epoch 16: loss=0.31805, validation NDCG@10=0.074067, scoring=4.32s
+neumf_lr0.003_seed44 epoch 20: loss=0.28337, validation NDCG@10=0.083080, scoring=5.16s
+neumf_lr0.003_seed44 epoch 24: loss=0.26167, validation NDCG@10=0.084718, scoring=4.04s
+content_two_tower_lr0.003_seed43 epoch 04: loss=0.25368, validation NDCG@10=0.090508, scoring=0.14s
+content_two_tower_lr0.003_seed43 epoch 08: loss=0.21071, validation NDCG@10=0.101391, scoring=0.15s
+content_two_tower_lr0.003_seed43 epoch 12: loss=0.19979, validation NDCG@10=0.105201, scoring=0.14s
+content_two_tower_lr0.003_seed43 epoch 16: loss=0.19323, validation NDCG@10=0.103522, scoring=0.15s
+content_two_tower_lr0.003_seed43 epoch 20: loss=0.18571, validation NDCG@10=0.096477, scoring=0.13s
+content_two_tower_lr0.003_seed43 epoch 24: loss=0.18686, validation NDCG@10=0.106519, scoring=0.14s
+content_two_tower_lr0.003_seed44 epoch 04: loss=0.26009, validation NDCG@10=0.089211, scoring=0.15s
+content_two_tower_lr0.003_seed44 epoch 08: loss=0.21435, validation NDCG@10=0.099688, scoring=0.14s
+content_two_tower_lr0.003_seed44 epoch 12: loss=0.20019, validation NDCG@10=0.095617, scoring=0.14s
+content_two_tower_lr0.003_seed44 epoch 16: loss=0.19188, validation NDCG@10=0.098620, scoring=0.13s
+content_two_tower_lr0.003_seed44 epoch 20: loss=0.18408, validation NDCG@10=0.093964, scoring=0.14s
+           family    lr  seed  selected_epoch  ndcg@10  recall@10  total_seconds
+           bpr_mf 0.005    42               4 0.081823   0.088350      21.420195
+           bpr_mf 0.010    42               4 0.080823   0.087285      21.543684
+            neumf 0.001    42               4 0.054268   0.066090      43.477441
+            neumf 0.003    42              20 0.081037   0.089069      64.851807
+content_two_tower 0.001    42              16 0.100116   0.116525      38.530908
+content_two_tower 0.003    42              12 0.103220   0.113870      38.324021
+           bpr_mf 0.005    43               8 0.078669   0.082889      25.994851
+           bpr_mf 0.005    44               4 0.079097   0.083671      21.407883
+            neumf 0.003    43              24 0.079634   0.089505      60.081242
+            neumf 0.003    44              24 0.084718   0.094397      62.049761
+content_two_tower 0.003    43              24 0.106519   0.121968      38.148748
+content_two_tower 0.003    44               8 0.099688   0.111188      32.634984

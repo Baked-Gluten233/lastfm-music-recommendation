@@ -1,0 +1,45 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+itemcf_n20_s0: validation NDCG@10=0.128107
+itemcf_n50_s0: validation NDCG@10=0.133977
+itemcf_n100_s0: validation NDCG@10=0.141635
+itemcf_n20_s10: validation NDCG@10=0.138174
+itemcf_n50_s10: validation NDCG@10=0.142889
+itemcf_n100_s10: validation NDCG@10=0.144629
+          model  ndcg@10  recall@10  precision@10  catalogue_coverage@10
+     popularity 0.057249   0.065424      0.032658               0.001531
+  itemcf_n20_s0 0.128107   0.133964      0.066755               0.189995
+  itemcf_n50_s0 0.133977   0.138865      0.069206               0.193739
+ itemcf_n100_s0 0.141635   0.149014      0.074267               0.195837
+ itemcf_n20_s10 0.138174   0.145471      0.072509               0.044068
+ itemcf_n50_s10 0.142889   0.150693      0.075120               0.047641
+itemcf_n100_s10 0.144629   0.151971      0.075759               0.047868
+Test metrics: NOT EVALUATED. Selected ItemCF baseline: itemcf_n100_s10

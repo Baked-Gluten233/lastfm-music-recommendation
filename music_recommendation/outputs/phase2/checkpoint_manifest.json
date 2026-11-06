@@ -1,0 +1,14 @@
+{
+  "bpr_mf_lr0.01_seed42_weights.npz": "77481c23783fd37e993641d1c51d4472a7bbe7dc1c736a6027271c4f638d017c",
+  "bpr_mf_lr0.005_seed42_weights.npz": "1ab0244f53bd72f4a38c9d5b11a5b59432b8c19b07bb363be45fb69c87081d53",
+  "content_two_tower_lr0.003_seed42_weights.npz": "c8a68e7c732a5cb9da70d9b363ea1e00442fb76c34a32ca2109d98590e75686d",
+  "bpr_mf_lr0.005_seed43_weights.npz": "7c13880b7ff52174be42fee13c673eb7ad82156ae4c3534be94b713eafaad9af",
+  "neumf_lr0.003_seed44_weights.npz": "18015c930d76fc5379bcfb307682a0a962c04658f01abdd67eec1b5f7ae9e36a",
+  "content_two_tower_lr0.001_seed42_weights.npz": "20ddaf79423d295c30453396cb27e7b71131a2b53b0e247e4f45313b38f14ff5",
+  "content_two_tower_lr0.003_seed43_weights.npz": "fbae51023dea68af9171c0758a3ba71cd387f26f69d661c02b40cef0115c2d8b",
+  "neumf_lr0.001_seed42_weights.npz": "988e66958eb8f86ac7bbffba7d455ff59c52a60fed71760995e1dfb51dbfa4bd",
+  "neumf_lr0.003_seed42_weights.npz": "3f9e586e59a0bb076ee6788bc057ed3b9b388cd24c4eb7a5720e07e0d73d96c9",
+  "bpr_mf_lr0.005_seed44_weights.npz": "2ac909d740b6127d8f29d7caf666bca94a1fe54a1627bf4037751d7f21eeaaaa",
+  "neumf_lr0.003_seed43_weights.npz": "62764e6a5d1d92512a9bd06729a587dc1e3fea836c868a967e9babcd7f8c1081",
+  "content_two_tower_lr0.003_seed44_weights.npz": "958fd126aff4bfd527736c8e955ade1ab07040d17bb4be802ddb161b33985cbf"
+}

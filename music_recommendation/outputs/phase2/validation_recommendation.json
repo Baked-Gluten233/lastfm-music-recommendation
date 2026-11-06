@@ -1,0 +1,9 @@
+{
+  "current_validation_leader": "itemcf_n100_s10",
+  "ndcg10": 0.1446289873680189,
+  "criterion": "same split, full-catalogue validation macro NDCG@10; stochastic models use chosen-config mean over 3 seeds",
+  "final_test_frozen": false,
+  "test_metrics_evaluated": false,
+  "caution": "small hyperparameter budget; validation-selected checkpoints and learning rates; not independent test claims",
+  "total_training_search_wall_seconds_sum": 468.46552602099973
+}

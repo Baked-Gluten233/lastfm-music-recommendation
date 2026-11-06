@@ -1,0 +1,6 @@
+            model  ndcg@10  recall@10  catalogue_coverage@10  seeds
+       popularity 0.057249   0.065424               0.001531      1
+  itemcf_n100_s10 0.144629   0.151971               0.047868      1
+           bpr_mf 0.079863   0.084970               0.005010      3
+            neumf 0.081797   0.090990               0.009056      3
+content_two_tower 0.103142   0.115675               0.067396      3

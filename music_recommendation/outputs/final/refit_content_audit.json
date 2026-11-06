@@ -1,0 +1,19 @@
+{
+  "raw_tag_events": 186479,
+  "outside_catalogue_events": 1538,
+  "within_catalogue_events": 184941,
+  "allowed_unique_train_tag_events": 66078,
+  "kept_train_tag_events": 59107,
+  "vocabulary_size": 2000,
+  "artists_with_content": 6055,
+  "artists_without_content": 11577,
+  "training_artists": 16582,
+  "min_df": 2,
+  "max_features": 2000,
+  "max_tags_per_artist": 32,
+  "tag_identity": "numeric tagID; no text encoding assumptions used in model",
+  "idf_documents": "training-observed artists only",
+  "eligibility": "tag (userID,artistID) must occur in train.csv + validation.csv; test pairs excluded",
+  "cold_start_claim": false,
+  "fit_data": "train + validation known history"
+}

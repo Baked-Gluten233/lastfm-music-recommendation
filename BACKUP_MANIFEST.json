@@ -1,0 +1,1226 @@
+{
+  "snapshot": "Available original project snapshot before validation-safety repairs",
+  "archive_sha256": "31be6723575c11f2714f1178ae8d45df9b0842487cf7c0f6ed56748f36d9f523",
+  "file_count": 203,
+  "total_bytes": 65797922,
+  "files": [
+    {
+      "path": "music_recommendation/.gitattributes",
+      "bytes": 256,
+      "sha256": "780ea9bd305c3fb510e5954e45935035a5279ec48aee87a05830266642e718a5",
+      "git_blob_sha": "ea1478f3ffe8b8029bb5d2a11df665c9dda5f48d"
+    },
+    {
+      "path": "music_recommendation/.github/workflows/windows-verification.yml",
+      "bytes": 805,
+      "sha256": "46f799874ff8407511bfcb42aa34d84224e2230c1f16e1b8864aa068927cd99c",
+      "git_blob_sha": "905664f5d0e4794c27cf9672bb577e486b53effa"
+    },
+    {
+      "path": "music_recommendation/.gitignore",
+      "bytes": 74,
+      "sha256": "9af60c29a3fe7b1e2f37ced288e40d4b702fb88293ef11577b75dee02cbe34ea",
+      "git_blob_sha": "3f3ea79a8eacf5fce0a257f2f86950789c4079f3"
+    },
+    {
+      "path": "music_recommendation/README.md",
+      "bytes": 8809,
+      "sha256": "59f92b7efb79403ab53d0349ed54aa85d0655a8309b6a2c75226ef2959ed5bd2",
+      "git_blob_sha": "3ad8cc40d8019131073e53b51fc6afad5791ad33"
+    },
+    {
+      "path": "music_recommendation/data/processed/artist_map.csv",
+      "bytes": 189656,
+      "sha256": "d7074fcd343766895bf877eadef9bac7eae4a768719695c9d2cfb23c5583ca35",
+      "git_blob_sha": "f1a575b487cd13e70876a0ab764b3991057529b5"
+    },
+    {
+      "path": "music_recommendation/data/processed/test.csv",
+      "bytes": 120082,
+      "sha256": "81bb4dee464514831306de5f0bc9ba306d9c80f61bdfb8f96d81ebf5fcfe73e8",
+      "git_blob_sha": "2426f61e026dea608af373111f4c436bbff286ad"
+    },
+    {
+      "path": "music_recommendation/data/processed/train.csv",
+      "bytes": 963295,
+      "sha256": "50b0550fbf709fa33b62bb699b1d2d43467f1528aa181eaeaae626d19549cd75",
+      "git_blob_sha": "625333cb6f858ed7235ec2954c084bdf161c57bf"
+    },
+    {
+      "path": "music_recommendation/data/processed/user_map.csv",
+      "bytes": 16809,
+      "sha256": "222a1c7db8f77dd33b5f0f7cb4a8c5cd134a41337a99adb09f84f1aa632c7535",
+      "git_blob_sha": "47325151b35ccc987766329b0a41f4484060de82"
+    },
+    {
+      "path": "music_recommendation/data/processed/validation.csv",
+      "bytes": 120289,
+      "sha256": "2e31ac6628e767268c9c0d00eda6ca1d73a746e2d148c3b100af9ea0b675edb4",
+      "git_blob_sha": "78f49d100a813329131a7f84405956660ffd2625"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/artists.dat",
+      "bytes": 1925879,
+      "sha256": "c173881362c6b28551368fecb3c0be5a6a30a6cd859e1f5775413dfe46d48648",
+      "git_blob_sha": "c33103eeaf8f7024748f5b370d6689d9e61ab1e0"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/readme.txt",
+      "bytes": 4627,
+      "sha256": "6fe5d1e6f67b025fc50cd70883dd1a1ff16c5ff37b5b7abfb33644b83468b209",
+      "git_blob_sha": "f8b648c0ca26df3131f2928c0ca8814a2ea63854"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/tags.dat",
+      "bytes": 234468,
+      "sha256": "e95175f259be4c0c47644ae23d66131cd6d5767142a1405000e79f5584691d70",
+      "git_blob_sha": "33dc23bcddbc42c0ab48be744152d356c63d66d6"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/user_artists.dat",
+      "bytes": 1296455,
+      "sha256": "001400dc3c7d2667fca6e4ea6dc6acc31a9dd28ad5cd0f74cea988c019934d3b",
+      "git_blob_sha": "e01e8d142e3df2a58a89d33598616658dd136dc7"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/user_friends.dat",
+      "bytes": 251565,
+      "sha256": "9a3a8f7fa5f5ec832335e5b58ed69a4cf27c6f6f6afcde62134810eea46445a7",
+      "git_blob_sha": "04ba5c18534fdde672268bd4113cdc8ebb2a87af"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/user_taggedartists-timestamps.dat",
+      "bytes": 5249917,
+      "sha256": "ec753318e453b15356853674b687da44d9f8c7e1215e1e0ff27aaa5f52e322bd",
+      "git_blob_sha": "43d466f5dcc219707e4a508e961d4b63de89f8c5"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k/user_taggedartists.dat",
+      "bytes": 4366696,
+      "sha256": "d31fe938fcfeed6f0059f37a36b156f63674d073fc2553e5cc9dc1595e365bc7",
+      "git_blob_sha": "767d371c20243df3deeae24ede577570e5e60566"
+    },
+    {
+      "path": "music_recommendation/data/raw/hetrec2011-lastfm-2k.zip",
+      "bytes": 2589075,
+      "sha256": "6738f48195667ff03caaab4d32ca9a3133d8cc026b7c3cdaf6ce1010e913c59c",
+      "git_blob_sha": "9943aa0c40565261a0c637ae80ac26d9013289c3"
+    },
+    {
+      "path": "music_recommendation/docs/experiment_protocol.md",
+      "bytes": 4029,
+      "sha256": "f66dbd0e135951be29f466be1ca61b72cd39e3c3e245e80d63e3b5bcbedebae5",
+      "git_blob_sha": "979b3df11ebc432c31fe9137af6f0be4c9e5b205"
+    },
+    {
+      "path": "music_recommendation/docs/learning_and_contributions.md",
+      "bytes": 2477,
+      "sha256": "b25e401ed8b35d1435919d73def920285d97fa27b85a27f0f2d53e2221bb361b",
+      "git_blob_sha": "4f3172401d478fe09b617f391f4c376fa4345e0e"
+    },
+    {
+      "path": "music_recommendation/docs/model_plan.md",
+      "bytes": 5114,
+      "sha256": "3e6a79e662fdc8a70c2345cad2389468a687145e1db45dbf2ec5b1c91ef035f5",
+      "git_blob_sha": "fdc2dcc477dd42b365472946b8f9343176087154"
+    },
+    {
+      "path": "music_recommendation/docs/phase1_findings.md",
+      "bytes": 3271,
+      "sha256": "304b13b8fddea0f38e4d86f5bb35ffb4d1287b389591f415621221876f70a582",
+      "git_blob_sha": "54302019f55111a347c15dbf603df0ef38756df2"
+    },
+    {
+      "path": "music_recommendation/docs/phase2_findings.md",
+      "bytes": 4904,
+      "sha256": "6a1aa635ca0a5567a0c88177a43aeafa9c0000cfdd57abd663ca9ceddd12f628",
+      "git_blob_sha": "9a99f1784e749c30931663abb7630cbe21522b4e"
+    },
+    {
+      "path": "music_recommendation/docs/phase2_method.md",
+      "bytes": 5439,
+      "sha256": "4292d6f1145e5049770b32f799ce36cdea6f646523ff0de47fe022ef4223ea6d",
+      "git_blob_sha": "2088a4d3592f6aaa0e2442d70672da7a03fa7b07"
+    },
+    {
+      "path": "music_recommendation/docs/research.md",
+      "bytes": 6655,
+      "sha256": "481f7bdcac7b4b84ba0487c1330cfc8eab09146b120d1bcb1b9ca78ce3b5552e",
+      "git_blob_sha": "f5bc05fbbab4d7a7c34b60f69f79cfbd952222f0"
+    },
+    {
+      "path": "music_recommendation/notebooks/01_data_and_baselines.ipynb",
+      "bytes": 144868,
+      "sha256": "d0ffdc26e11c24130619207d8b04a42a4b82448a3ae102a16ddbeb713fccc1da",
+      "git_blob_sha": "cfac5b0218588c994bd0e36204439b0435a56ba6"
+    },
+    {
+      "path": "music_recommendation/notebooks/02_model_iterations.ipynb",
+      "bytes": 260910,
+      "sha256": "853b1ca630e3c986fc41ef6f55cbdb5d4199333a5ede396310476bd426f36214",
+      "git_blob_sha": "90682e071d40ebbd39411998aaefb55be1b6f872"
+    },
+    {
+      "path": "music_recommendation/notebooks/03_frozen_final_test.ipynb",
+      "bytes": 196693,
+      "sha256": "79b3457a4fa17acf18db38a08fdad9db1ca4b1c30932fd5e6ac8b04f85df439d",
+      "git_blob_sha": "739bb78002a52c166261153e34c6d746b9d323c5"
+    },
+    {
+      "path": "music_recommendation/outputs/data_audit.json",
+      "bytes": 1805,
+      "sha256": "1a02ae80d84ddc896dbce3041eeb5694baba4af4d71f4dab26ef2f890f4ce584",
+      "git_blob_sha": "ef0dffb3572f6f28487a1df58416e3e4d63068c6"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/01_user_activity.png",
+      "bytes": 23402,
+      "sha256": "976bb081fce74e1dd0241ba166c74fc8abcaa3ff7510e051265557654f1059df",
+      "git_blob_sha": "912b50c4d61b5260a673619629d123553d183ce0"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/02_artist_long_tail.png",
+      "bytes": 36269,
+      "sha256": "2ac449dacd452e87bdf0133a83121b47aa21fb2f049f32db5c8ade7ace57cfd3",
+      "git_blob_sha": "e334e5d2cd444fc9a1ad9353ff412779881e7e02"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/03_listening_counts.png",
+      "bytes": 29316,
+      "sha256": "849fb236c8c5e0bc55364b054f984115eb9988e18b2494649540bac2518dd565",
+      "git_blob_sha": "0bcb687694330aa43ef56b61812087ae72154f5e"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/04_learning_curves.png",
+      "bytes": 124147,
+      "sha256": "a447177e1247a49b41fd9f2cf3a5ce4477c5cb70c6b80e9d36859874f66b4e7a",
+      "git_blob_sha": "96e6cad1334ac49d409f2416a63f931017d77003"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/05_validation_comparison.png",
+      "bytes": 43351,
+      "sha256": "0529ed1e021bba17d7c9eb9305a20b9415aa58e9b0e6234bb8251df5f28ec5f6",
+      "git_blob_sha": "3aa34c0a56a698d91271b3227bc8446969b01051"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/06_final_test_comparison.png",
+      "bytes": 56928,
+      "sha256": "335444078e7f321fd7dfe1482474b37d71b9889191adad6dc3d28d84c61b444c",
+      "git_blob_sha": "3ebe9067b61706e505d312a52cd918892f833275"
+    },
+    {
+      "path": "music_recommendation/outputs/figures/07_test_accuracy_coverage.png",
+      "bytes": 57869,
+      "sha256": "fac3a5cec3e23b575f15ef1c207589d5c753dfc9766b3f2161f83d7b83c88b82",
+      "git_blob_sha": "bd77cd4c633c4d4bbd79a5104ed5aef7a9d5d1eb"
+    },
+    {
+      "path": "music_recommendation/outputs/final/all_test_runs.csv",
+      "bytes": 4638,
+      "sha256": "fd9a21cc5e4541f64e63485136215fe985ce25999c869245a83055003d85f9a7",
+      "git_blob_sha": "6ea1df8774eb76e47d6352b8dd58bf0fedc56e55"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed42_refit_history.csv",
+      "bytes": 100,
+      "sha256": "72f95d82759584364727f4dca346a7ad715af52380bb1e6c39d2a031227c1edc",
+      "git_blob_sha": "7bb2c9c66a5e6d0faf5e1c5502510d895ca9fea0"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed42_test_users.csv",
+      "bytes": 104592,
+      "sha256": "bd2a1754ebe7507d69ced43851314c2eb5269e806b8f6409c7cbb3ed2270b8f6",
+      "git_blob_sha": "de95a2d6be8a3fa5bbabbe0dbc5961059a77ab4c"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed42_weights.npz",
+      "bytes": 2342198,
+      "sha256": "1c191973139c45917523989ce30eab9cf42946b5d9e2fb718b4faa9fe3d4c922",
+      "git_blob_sha": "2441eac65287e209c2f7c4ff36e3706d0baebf32"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed43_refit_history.csv",
+      "bytes": 102,
+      "sha256": "50238cd19b34e7a779664303de338003f358fbde0aad5c2de3842b1ad46af751",
+      "git_blob_sha": "7499479aee9bd814301d4ac3dad6bcac42cc8026"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed43_test_users.csv",
+      "bytes": 104402,
+      "sha256": "74542b7894d5521084c76b9ab9d604884e20021a622d5eb9c8e5e61d1819d37c",
+      "git_blob_sha": "90837863de4c239bba89d7e0c3dba40234e56045"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed43_weights.npz",
+      "bytes": 2341694,
+      "sha256": "32d39570d7ef8e4cbe9627ceb4f993f44459bd0a250aed58ba4fff7fe6e14e0d",
+      "git_blob_sha": "0219f0ec3418c159168da43308ac2a760f558849"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed44_refit_history.csv",
+      "bytes": 102,
+      "sha256": "391cf830b9d4ac09120954d97615530792cce925f83a3feda041899254c3e5de",
+      "git_blob_sha": "643d74b3fe1c7d64be8f4593516f94ca8559797e"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed44_test_users.csv",
+      "bytes": 103359,
+      "sha256": "b8a3d8bfa24b7ed772ebff3ef1f7e804d9df5cbb4c02909f36930cb4864e9163",
+      "git_blob_sha": "9f562490ffa930a77393c38f85ef4bfdf6317832"
+    },
+    {
+      "path": "music_recommendation/outputs/final/bpr_mf_seed44_weights.npz",
+      "bytes": 2340194,
+      "sha256": "5377fbe84d6c04ef17750678f07f5fb92835a76e4a51070f3d62a7cd5f04f760",
+      "git_blob_sha": "d81fc0e27af80c28f8ad368904ccbf50b7990af3"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed42_refit_history.csv",
+      "bytes": 281,
+      "sha256": "39e9228b4eb40f5089768b2a612d2cd952acb37ab4eeed0e45819bf4db0e189c",
+      "git_blob_sha": "6bb97cbf345d6345ec839141d0bec1577bf945f9"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed42_test_users.csv",
+      "bytes": 112681,
+      "sha256": "ccef412f44b805b131f96f07f3da0e6760b6d2f6aa33b301db4526eeda926941",
+      "git_blob_sha": "c68af42d774c6892b410dddf0a2b182a3cb0cb7d"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed42_weights.npz",
+      "bytes": 968307,
+      "sha256": "64b201584d1cfe5fd5c5145fbd3ee2a7170cce086af0c4ee5d7f2f753b783fb8",
+      "git_blob_sha": "721bdf1a530400b58bf964ea84524dadabb37496"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed43_refit_history.csv",
+      "bytes": 274,
+      "sha256": "c79b74ef31060de60ea93b03c35eca53811054d7dd99a60cf60fd786c8d2ce37",
+      "git_blob_sha": "486ae09dcc5129087a0464497782c3a52b1800d9"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed43_test_users.csv",
+      "bytes": 112244,
+      "sha256": "4457025cec3f24ea148c8fe7f66f5bce8d3ca0990d0a2caeff153b0bfab66eb1",
+      "git_blob_sha": "5cd88f1a1636490e2583494309f67c152f84fa30"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed43_weights.npz",
+      "bytes": 968865,
+      "sha256": "39e645a6452ef0e240996fb5847526989d07b5f40571416d02d7425ca0e4c7a7",
+      "git_blob_sha": "99a58cb9702be380636c2f5129fc84ecf9923c58"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed44_refit_history.csv",
+      "bytes": 281,
+      "sha256": "bdd99950ad31302e1ea59930b074c8e8d5ea21d1e8f0cfbd8d55e50a179f03a8",
+      "git_blob_sha": "7951bfedbeff8dc2039124e3afd669b47451743b"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed44_test_users.csv",
+      "bytes": 112657,
+      "sha256": "c47bd88bbccd56827423e6c262922a7691abbad41577e1ca31e18c012e002d86",
+      "git_blob_sha": "a8aeb6706ab617d81a5c1a71696a47e9aaa6bf02"
+    },
+    {
+      "path": "music_recommendation/outputs/final/content_two_tower_seed44_weights.npz",
+      "bytes": 969126,
+      "sha256": "0d745b6fa1701d621b21626184ad6736581f433a1d26a45076170caa394a213b",
+      "git_blob_sha": "5ecdeb6950b3268383aefc04b6068d0a61bd832e"
+    },
+    {
+      "path": "music_recommendation/outputs/final/evaluation_state.json",
+      "bytes": 815,
+      "sha256": "d9d9d787bf953d15ca4fd21ee53d4b64526090f47ed92e4729280bbe468075d1",
+      "git_blob_sha": "5c722255d282f387ad5b7157bcff471ed3c3a46b"
+    },
+    {
+      "path": "music_recommendation/outputs/final/final_checkpoint_manifest.json",
+      "bytes": 3626,
+      "sha256": "766ebdab971e4c7f88bdde0b897e4f264986aa868efc4c082ffec3950be9b73d",
+      "git_blob_sha": "fa724bdb0674a6e3b21cf1187b2372f4d7c1f837"
+    },
+    {
+      "path": "music_recommendation/outputs/final/five_model_test_comparison.csv",
+      "bytes": 2152,
+      "sha256": "8bffaad687acdb69efcfce24601215a66272ca48c1d0cf8d4462f0ddbbff0007",
+      "git_blob_sha": "e845bac615113f43fbf654cb21d31e533b7e6afb"
+    },
+    {
+      "path": "music_recommendation/outputs/final/freeze_receipt.json",
+      "bytes": 146,
+      "sha256": "e5ddd0bc13259f9e4d5884fdbbc23a69c29899d23d02b5c10b9e9837211842be",
+      "git_blob_sha": "54f2905d11062cb83d80827c614dcd7da552d8e0"
+    },
+    {
+      "path": "music_recommendation/outputs/final/frozen_decision.json",
+      "bytes": 3710,
+      "sha256": "24a047dabfa2fffeb57f6c0b38e5191fb73626778c65f4502ad07dcd836c84a7",
+      "git_blob_sha": "491b626df6852fd03b1aed97472752919790b1ec"
+    },
+    {
+      "path": "music_recommendation/outputs/final/itemcf_similarity.npz",
+      "bytes": 2762297,
+      "sha256": "c6aefb315eae53948bdb9d7b694732e44b7a2daf1ea23484aad42bf079b25556",
+      "git_blob_sha": "952f6b2ad1cc4dcf6afed3e6096923c7489a3224"
+    },
+    {
+      "path": "music_recommendation/outputs/final/itemcf_test_users.csv",
+      "bytes": 118491,
+      "sha256": "f92daa968dfebbe7aba2f6c662fb4d8a15aa327ba7fc7accd9055525ad3c5fdf",
+      "git_blob_sha": "f6bfe5aae453a73ef2b63272fea8ddb16a337a34"
+    },
+    {
+      "path": "music_recommendation/outputs/final/known_history_matrix.npz",
+      "bytes": 154120,
+      "sha256": "347e88ff1eb2df67876ed0048792e14154cd46f27757a5c94e12d7ab81ebe244",
+      "git_blob_sha": "1d865eb0231dca608c358d82b37c388e6f0bb680"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed42_refit_history.csv",
+      "bytes": 543,
+      "sha256": "c883955c0f4dea13b2ff4d73a253e287b577857419d6ec6d67d865fd4502f70e",
+      "git_blob_sha": "cf13dfc9c278f4fbbd3c600a403272cc094d311a"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed42_test_users.csv",
+      "bytes": 105632,
+      "sha256": "19e34905f6a748ce6531cf90427b59f9899c30edfac948ea2c36cfe3703563ab",
+      "git_blob_sha": "1b050de26cf96cc3e7c0fb19c9993f2d6ea8624b"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed42_weights.npz",
+      "bytes": 2280347,
+      "sha256": "178900704a41ddf272fe780cec7784b8d6f1f2cc7275a23ecc8f5cf77086560a",
+      "git_blob_sha": "8b247df912c8ea89828f875265660b3ec8c37b3a"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed43_refit_history.csv",
+      "bytes": 543,
+      "sha256": "ab280cfcd525ed06c478272597e1622ff7b971fee7d80c03c7c9626ca96767de",
+      "git_blob_sha": "3ce4a8d20452d2b1c379fcf2409564913a8ada84"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed43_test_users.csv",
+      "bytes": 106044,
+      "sha256": "d6703bf0f2525397b6d861eea001de074256b6a6e7dd530a01767a1e0c73e334",
+      "git_blob_sha": "3fafd3949f1022a915e05f51bfd36540863064b5"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed43_weights.npz",
+      "bytes": 2277587,
+      "sha256": "c922568fd5da43114da89281f074cc13d561b3b303cc6821694645b872794636",
+      "git_blob_sha": "59bb9ddc8eb51a956deb5bc482e5bce3293b69cc"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed44_refit_history.csv",
+      "bytes": 546,
+      "sha256": "639ff2376ca49ef9314c5b6dfa81f2421805aed7660990cf84b6aa07c893cd85",
+      "git_blob_sha": "9f8f0e2c7a366931b7b1fbfdab03209ec9aa4388"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed44_test_users.csv",
+      "bytes": 106507,
+      "sha256": "126db96679b109ec142faba21fe77c524af043b8dd3b0bdfb0c2b882cc76aecc",
+      "git_blob_sha": "6852df7687a34c7846151e9cc07ce44b953673cd"
+    },
+    {
+      "path": "music_recommendation/outputs/final/neumf_seed44_weights.npz",
+      "bytes": 2280448,
+      "sha256": "73ae2e6a75a5011bb63ac176729f9a45aea8942365bfec18d236510601c291e4",
+      "git_blob_sha": "da88b03076433859d681c8b8b845d8214710a165"
+    },
+    {
+      "path": "music_recommendation/outputs/final/popularity_scores.npy",
+      "bytes": 141184,
+      "sha256": "a81d1019ab69cdc5104b86636ec2e304544bd123f641db5cfe17e9058c6e6da8",
+      "git_blob_sha": "95c83b56a01cb854343cb16d6934ffa09c81eced"
+    },
+    {
+      "path": "music_recommendation/outputs/final/popularity_test_users.csv",
+      "bytes": 101291,
+      "sha256": "1f4475ab4aa446e3778ee1551cc1505b2685f6f03564835eea649db5d252e645",
+      "git_blob_sha": "45522cac1995a53638533fbd1ca4a1646671b298"
+    },
+    {
+      "path": "music_recommendation/outputs/final/primary_paired_user_bootstrap.json",
+      "bytes": 326,
+      "sha256": "9812222484fd3c338eecb446127eeff33a0ce2a57469d4ee7700b2935a7be5fa",
+      "git_blob_sha": "f01b5472a50bd2b3d7e59127e88a4d4e166e03bb"
+    },
+    {
+      "path": "music_recommendation/outputs/final/refit_content_audit.json",
+      "bytes": 688,
+      "sha256": "cf2c65f7f752e0cc643cc53f696a3ddaeefce4c6d475aff63dd18914ea92d9ff",
+      "git_blob_sha": "8d354aed94d66e1f6e65918b755506769ac7441f"
+    },
+    {
+      "path": "music_recommendation/outputs/final/refit_content_features.npz",
+      "bytes": 237604,
+      "sha256": "fe7315f45542f70b1d98d42b883682a02c87d8593f68ebe111e0b7d876ecc7f3",
+      "git_blob_sha": "f3bd851fcb8beb8874843dd222eae5c012814d14"
+    },
+    {
+      "path": "music_recommendation/outputs/final/refit_tag_vocabulary.json",
+      "bytes": 15530,
+      "sha256": "65c533c95bd8e1fa7b540a15d45284d122749e669bd984458acd43f6b59c0c28",
+      "git_blob_sha": "ef0affdfcb6385a77f18a684e8d761636f52bf5a"
+    },
+    {
+      "path": "music_recommendation/outputs/final/representative_cases.json",
+      "bytes": 13233,
+      "sha256": "dcbefca9560893a6a738e42951d6024de70a7a9f5301d87cef188048510a7a33",
+      "git_blob_sha": "89492c92410642bc62fb744956eb3565d3239d28"
+    },
+    {
+      "path": "music_recommendation/outputs/final/test_group_summary.csv",
+      "bytes": 1438,
+      "sha256": "66ddbc07fdef207b6659b17bb998abe1d758bbd5e406c451c09b8ba9589e674e",
+      "git_blob_sha": "870ced091e5f08419605d338703e196fc44558f8"
+    },
+    {
+      "path": "music_recommendation/outputs/final/test_user_groups.csv",
+      "bytes": 4050,
+      "sha256": "6be953e374c718880aee56ccdabcb56b932e09db0449636200c406d9d5e478cb",
+      "git_blob_sha": "c55cd167245c2c0687363848b45409e448e156f1"
+    },
+    {
+      "path": "music_recommendation/outputs/final/verification.json",
+      "bytes": 439,
+      "sha256": "0bd63e729b55b6e1763f4214528e2836b3a309239e5aa7fa1e5ffed226041050",
+      "git_blob_sha": "6f4b0f7fd00218b47988a27f2bf48cb621371e70"
+    },
+    {
+      "path": "music_recommendation/outputs/final_code_tests.log",
+      "bytes": 2676,
+      "sha256": "8905723aa1075c8f31c07e4a50dba6c5cb4212c02f29921ff338e122536a7b19",
+      "git_blob_sha": "91e446dcb330346c936afe869711ac88d610352c"
+    },
+    {
+      "path": "music_recommendation/outputs/final_freeze.log",
+      "bytes": 3711,
+      "sha256": "3fe686484cadda98ef84a21c8250c3fa306127a2a3d147dad1919ad0f4de0d7e",
+      "git_blob_sha": "0ea5d98cc331b5d8a4fe0e812ae02fbd27959dec"
+    },
+    {
+      "path": "music_recommendation/outputs/final_notebook_execution.log",
+      "bytes": 136,
+      "sha256": "d9e3a8c909bc05b40689fa3326469c193f9edd1a4772c2bca9887ac262cc1e06",
+      "git_blob_sha": "a4ae1ef08e24bb8e59bf9f2aeb2fc90842550e21"
+    },
+    {
+      "path": "music_recommendation/outputs/final_run.log",
+      "bytes": 1188,
+      "sha256": "7f0cac890e934801e6e0fc43d26b1d166fbc86a66f5b3352cc59ff95cd9df9a9",
+      "git_blob_sha": "72b1a262a741c80126f781b8e982397c36599022"
+    },
+    {
+      "path": "music_recommendation/outputs/final_summary.log",
+      "bytes": 468,
+      "sha256": "ec8a4ef839dcf516dc208db7e66282f8cf201f9cf76d0e91d8287f73060bed7c",
+      "git_blob_sha": "dde65a2c5f8f8b76f2f33c0753bac4a63acee4ef"
+    },
+    {
+      "path": "music_recommendation/outputs/notebook_inprocess_execution.log",
+      "bytes": 136,
+      "sha256": "c91d20d4c8d363e0913c3b483edf08e701abaeedb3af5ee8b6881850fffed235",
+      "git_blob_sha": "c02f8cfddf58aa2f2bf5eebce978e07b9234ad74"
+    },
+    {
+      "path": "music_recommendation/outputs/phase1_run.log",
+      "bytes": 2358,
+      "sha256": "0751bdbf0b71506eafd5acd01a59da8d56c058f42247a0b92f8ca4147f873290",
+      "git_blob_sha": "ab0476c578345172174f10e8d28100123d4d642a"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/all_runs.csv",
+      "bytes": 4746,
+      "sha256": "df76876dcc554b8eb9f3c51a2047277f16dbdb4409063f8cca6bdf636e363060",
+      "git_blob_sha": "d46ac3812ef84466177e198686f159e3529a7629"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed42_history.csv",
+      "bytes": 1203,
+      "sha256": "a63a91e349fc8769e34e220f2261a0567f9caa1c8ba4a235b3101ef48df4ce81",
+      "git_blob_sha": "d0f9cf0528886d98011617d73953168c3adb2cdd"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed42_result.json",
+      "bytes": 896,
+      "sha256": "5969ef5b5b3f4c468bd500b7193d6092de35e3dae11acaf6030c7c91511befcd",
+      "git_blob_sha": "85d2b95a860e1449e0d3a352bae1989ff56f00a4"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed42_users.csv",
+      "bytes": 103696,
+      "sha256": "56d65c6ca5bd81f7acbfa89eec92cb07a5eda4da4d317b299a86d17a55495ce3",
+      "git_blob_sha": "01e11b93652d27110992048acc502ade76d6a42a"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed42_weights.npz",
+      "bytes": 2351969,
+      "sha256": "1ab0244f53bd72f4a38c9d5b11a5b59432b8c19b07bb363be45fb69c87081d53",
+      "git_blob_sha": "2f0c862fff79d4416e389ed6dea959082a8bbb3d"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed43_history.csv",
+      "bytes": 1482,
+      "sha256": "fd2afd5bea53a815cf5fa741a462ec00d9abb3d793a95b81cb0f8ab3da52fd2a",
+      "git_blob_sha": "89b8ed2d308f8ad9d01957565ee2c967161c718f"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed43_result.json",
+      "bytes": 897,
+      "sha256": "49481822b64a75b4c4533e3aeccd551a71ca2871a1537ce8b6785e8fd4df78eb",
+      "git_blob_sha": "c40fb7531493814eaed964d922ee7636419c88f3"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed43_users.csv",
+      "bytes": 102850,
+      "sha256": "e42419f633dd3d2dc3e8d85f8766afcb054c01c96ec00bf7664375178432d91a",
+      "git_blob_sha": "7a91f5910f0d4fa029d312e2b9be8152fa121624"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed43_weights.npz",
+      "bytes": 2352398,
+      "sha256": "7c13880b7ff52174be42fee13c673eb7ad82156ae4c3534be94b713eafaad9af",
+      "git_blob_sha": "7da4b4d54e6c6174125cd8a9ad4d8bb1b51bcd4b"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed44_history.csv",
+      "bytes": 1201,
+      "sha256": "ca0c1d43613bd80e382da03f6545e58046a3813077d5bcf690fc2438d5b130d9",
+      "git_blob_sha": "3b60caef7a7dfa2f147db69fa1b9bfbf5a2a8565"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed44_result.json",
+      "bytes": 892,
+      "sha256": "0e65517f9928e9d9107c6fff73ecbb77db2f5cdb29cc4081886c75ea6d3be599",
+      "git_blob_sha": "f56f937ef8b38a8a0859b7056886bba1b2c251fc"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed44_users.csv",
+      "bytes": 103154,
+      "sha256": "fdcfbd03a8c3f51f55286f65a42e27f16670e67539a293536d887eebc150b9c8",
+      "git_blob_sha": "c1238c438ade73eaec51128ea5409a19deb9b571"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.005_seed44_weights.npz",
+      "bytes": 2352390,
+      "sha256": "2ac909d740b6127d8f29d7caf666bca94a1fe54a1627bf4037751d7f21eeaaaa",
+      "git_blob_sha": "ea961e77a098666517d6985dfa608c5ecc717e23"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.01_seed42_history.csv",
+      "bytes": 1210,
+      "sha256": "bbacfbb255547c0a6bd4f138218fc140b392d23849c246e0b12e5e16fe730e7e",
+      "git_blob_sha": "217050602f844a2ececde54d78c08ab754af3b81"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.01_seed42_result.json",
+      "bytes": 893,
+      "sha256": "418af0fda03e76b8abcec91c14c9d19f41faa030074d87388408b4481a865557",
+      "git_blob_sha": "8d28ae016d8b461512c023f6a8eda9069ffc7eab"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.01_seed42_users.csv",
+      "bytes": 103216,
+      "sha256": "2caa254360340e6eecc6f473655d77f57d4d1c87c884e14446e7c257e1ad8b41",
+      "git_blob_sha": "94ddeab145ac561020b6f22f2013dcf6a7fbea86"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/bpr_mf_lr0.01_seed42_weights.npz",
+      "bytes": 2359225,
+      "sha256": "77481c23783fd37e993641d1c51d4472a7bbe7dc1c736a6027271c4f638d017c",
+      "git_blob_sha": "b32fa70feaaff77070620f9b53d4933824bd8fb2"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/checkpoint_manifest.json",
+      "bytes": 1325,
+      "sha256": "4b83e7b6c216b54c7c04e26904f70d2b605e35d50d11afdb8b44a1db344d4957",
+      "git_blob_sha": "6dd395db311547fa32c9e57fc365fa5fc841ab90"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/checkpoint_replay.json",
+      "bytes": 1549,
+      "sha256": "e5bb9723c1a9c2377dd8af4146200fcc40b5bdf626d44bf6bb0996d09432657e",
+      "git_blob_sha": "c478587cfa5a561b7a97277a88b78a3c44b9b0bb"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_audit.json",
+      "bytes": 623,
+      "sha256": "0d2fa14309c67a0c8d87450939ec6b9e957b5d68dbafe4281f6b8c1512014903",
+      "git_blob_sha": "5a756166d49c50264d8f94ff078610290eb98bb6"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_features.npz",
+      "bytes": 219543,
+      "sha256": "17b2a9c451c73d93c13bb29dbb55833a1f58aa8d22e70aedd0a9ab5267e3ff5a",
+      "git_blob_sha": "5354d3c7ad8ee0cd577954c002af5113cbb9a47d"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.001_seed42_history.csv",
+      "bytes": 1740,
+      "sha256": "0e4646711995aca0deffab666fc23acf46f4b3e4cdcd4c060ea08d7be71f568b",
+      "git_blob_sha": "f2c9a13ef399d6501a8c3f743b5e557e097d0879"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.001_seed42_result.json",
+      "bytes": 913,
+      "sha256": "93cbfe0a6933c25e7ab06bcc0cecbb15cf51039af49128ec81cade5910c04149",
+      "git_blob_sha": "780b518e81668124a0d19c0519ac4d1037c6fefa"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.001_seed42_users.csv",
+      "bytes": 111170,
+      "sha256": "23e0267ba54cf5ac68bb8f0b685c349776a5af704250fa21f11d9de611880f50",
+      "git_blob_sha": "a236e522f97cfcfa7383c0dfa3728c3d52232e24"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.001_seed42_weights.npz",
+      "bytes": 948131,
+      "sha256": "20ddaf79423d295c30453396cb27e7b71131a2b53b0e247e4f45313b38f14ff5",
+      "git_blob_sha": "4413dc098a373ff2fe2dfb577eabacf8bd248671"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed42_history.csv",
+      "bytes": 1734,
+      "sha256": "95ff14b1cd1bb7ed8a24207bc3b8369d0a390c80cf156907b76ef00bc281594a",
+      "git_blob_sha": "b029f7320d36308e1baacc65e88ce40dfd59097f"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed42_result.json",
+      "bytes": 914,
+      "sha256": "ac044f39b8bff58e0d47ed01cad6a402570d678e2e554f875366b14b2a0480a3",
+      "git_blob_sha": "52371fba34d107de481c1d162037cc424fb48f71"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed42_users.csv",
+      "bytes": 110506,
+      "sha256": "e33f37ccad760081ba3aca1361ca59f601a5bb3c7c7e7ae3413062a59e49e063",
+      "git_blob_sha": "458b9315d89b3b02f3e9b1bfee41290b03d81145"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed42_weights.npz",
+      "bytes": 950496,
+      "sha256": "c8a68e7c732a5cb9da70d9b363ea1e00442fb76c34a32ca2109d98590e75686d",
+      "git_blob_sha": "7102af84c117ea7fbe74a892e156879123c1fbfb"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed43_history.csv",
+      "bytes": 1747,
+      "sha256": "8b110b2fd01413acf2bd3b4a7fee842c0106cce63530bb1f05a9bca63dd88bb9",
+      "git_blob_sha": "f09b2aea5de6713ee0f90d7ffadbf1cf871d00f5"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed43_result.json",
+      "bytes": 916,
+      "sha256": "59bdd52f7e30ea98b6f79999b99d2b556e3b4f39b9752779054c59e8caf96a32",
+      "git_blob_sha": "e29b1b003dbe02c63ecef7035113549ce5189254"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed43_users.csv",
+      "bytes": 111865,
+      "sha256": "097dee431034699377598d6c66a83dbc01e9fc58fc72f3fc00ba57b19042d16f",
+      "git_blob_sha": "758467b3fbb049996b2d2a677dcd4ae421a9b961"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed43_weights.npz",
+      "bytes": 952056,
+      "sha256": "fbae51023dea68af9171c0758a3ba71cd387f26f69d661c02b40cef0115c2d8b",
+      "git_blob_sha": "79005cdbab3ed0dfe3e8fdd056d5694a6fe1ac02"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed44_history.csv",
+      "bytes": 1468,
+      "sha256": "fa994d3ca50567c7016bb8c3fa710bcb668a994ad451f8c4604888c0469b17d5",
+      "git_blob_sha": "cb52deafab049ffd6f35f6e49b4b012b1ae936ff"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed44_result.json",
+      "bytes": 908,
+      "sha256": "85315d6c60ace7837ad0f1faa30d414391de4b71ca65627b1481538f3f74666d",
+      "git_blob_sha": "6a8375f8f21def4aff32359657cf57aca1da679b"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed44_users.csv",
+      "bytes": 109834,
+      "sha256": "f98d4930d55ebe8bbc9cf4f27e780e5c974dcea9ea2406a83f0156634eef3dbb",
+      "git_blob_sha": "3876fd6c75f6969113134778ebf6725f6e7ff828"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/content_two_tower_lr0.003_seed44_weights.npz",
+      "bytes": 949650,
+      "sha256": "958fd126aff4bfd527736c8e955ade1ab07040d17bb4be802ddb161b33985cbf",
+      "git_blob_sha": "0f1ba4fbb63781ca196feded6b8a6a12990e6111"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/five_model_validation_comparison.csv",
+      "bytes": 1555,
+      "sha256": "3a33aac2a1343bd7dac62b96b2a75e1be230a7ae694269fc189fec515f04133e",
+      "git_blob_sha": "d2e40a03f9cafdc6a01996ccf4ced324e5ed9838"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.001_seed42_history.csv",
+      "bytes": 1191,
+      "sha256": "525aff3ab2c168fd00166fbd6cebd46aed8ee81887483ef066da3653dfdc2dd1",
+      "git_blob_sha": "8d291183e66f4d775f55fc2c51c632a05cc5221b"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.001_seed42_result.json",
+      "bytes": 888,
+      "sha256": "5082f84db1dea696a19d03ff9c4de299993b616b27c73b9cb15fc226b30b2d82",
+      "git_blob_sha": "b9b52738185544181cbdea9a2d881187542f93ad"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.001_seed42_users.csv",
+      "bytes": 99883,
+      "sha256": "fc1612518c17be569e4dbaca605d2dcf7bda6c7dd4e768ab205bbfbc15d3e494",
+      "git_blob_sha": "0e86b77b06a00402600605474ccd7688137e6d7e"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.001_seed42_weights.npz",
+      "bytes": 2364846,
+      "sha256": "988e66958eb8f86ac7bbffba7d455ff59c52a60fed71760995e1dfb51dbfa4bd",
+      "git_blob_sha": "228f1725b64266abbe44c909fafca73afa1693f5"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed42_history.csv",
+      "bytes": 1750,
+      "sha256": "4093b58a10d3afd4c51b4503f6411afd67b083aaa1311d5bc8ecfe1da9da4efd",
+      "git_blob_sha": "c2e0a766d86f7070be57231765364a40dd10838e"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed42_result.json",
+      "bytes": 887,
+      "sha256": "b80cfd17c508fed85e89a3f26e59db05eafdb29eb4dff06a91594cbea7cafcb9",
+      "git_blob_sha": "03f0fa36e46cc78d41978fd3d850e2719c5f5f78"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed42_users.csv",
+      "bytes": 104217,
+      "sha256": "10479ae4ad0a5f1acdf32c5b33fa9a3b1ec4784826d8bf3718c83159f80f6ff3",
+      "git_blob_sha": "2094a5d7523c070169a8e5b1f2d7cd6d838e0e25"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed42_weights.npz",
+      "bytes": 2349822,
+      "sha256": "3f9e586e59a0bb076ee6788bc057ed3b9b388cd24c4eb7a5720e07e0d73d96c9",
+      "git_blob_sha": "598c80c2be48d8b8b5e9a68696bc16e529cec628"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed43_history.csv",
+      "bytes": 1737,
+      "sha256": "913440264211cd17e3165b1d723ff4b6b5af570f22e55032b261a35055e237fe",
+      "git_blob_sha": "05622b0934d1294f3ceebc63588df1d36614bac7"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed43_result.json",
+      "bytes": 888,
+      "sha256": "38371f8811c43b722cc79845febef8c5b888881bd4df8801ad6f1718d40a2489",
+      "git_blob_sha": "f1e10a880326c2fecb346ec24dad0ba02fc261db"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed43_users.csv",
+      "bytes": 104710,
+      "sha256": "d45991087e2ca0f44710882c016a8340606d6b91ab5e64ff54d5d32588fbacf9",
+      "git_blob_sha": "9f85e2f923140e5ca9eba0ecc623da2a372e011b"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed43_weights.npz",
+      "bytes": 2281138,
+      "sha256": "62764e6a5d1d92512a9bd06729a587dc1e3fea836c868a967e9babcd7f8c1081",
+      "git_blob_sha": "d989319e04356dcffd333b773801fcc75ada24b2"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed44_history.csv",
+      "bytes": 1736,
+      "sha256": "68f38cf8f07a9bd8ed617ac7c9ffb3cc5388395bb5da50b9b78bf361d5b8fd2c",
+      "git_blob_sha": "b009ae61333d530ee65686c80725edf98ceefb23"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed44_result.json",
+      "bytes": 888,
+      "sha256": "c7b661e54d14918a77e5c05da54701fd615dc50ce69a2f9e54656c63b2381398",
+      "git_blob_sha": "9d34406c6c40f708d8079603925929396b864527"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed44_users.csv",
+      "bytes": 104807,
+      "sha256": "721d06784a8df3f4d95b4fbb29a33b02d2f7260fc916f20e7b299678f5f56a4c",
+      "git_blob_sha": "8d6735527344595c89bb89bdccab6686dbe63277"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/neumf_lr0.003_seed44_weights.npz",
+      "bytes": 2278613,
+      "sha256": "18015c930d76fc5379bcfb307682a0a962c04658f01abdd67eec1b5f7ae9e36a",
+      "git_blob_sha": "fa6c3522babb47c1b4e3aefd920c46a40b37583e"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/protocol.json",
+      "bytes": 1251,
+      "sha256": "47fee10d2bff6b30bd5b85b88548f41ca67dba41c89700e325bb9ea34da4fe0d",
+      "git_blob_sha": "ba7399ae01bd722fd60da369667d73482e2d19ab"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/selected_configs.json",
+      "bytes": 469,
+      "sha256": "570891334b209e00cefa97026cab51acfd0cdaea5f844263853dbfa65da99245",
+      "git_blob_sha": "dcfd982a24afbbc6e8a0cef97bfe0cfb6d166935"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/selected_seed_summary.csv",
+      "bytes": 1270,
+      "sha256": "240d8cbff13081263509427cc6796a0d7b821dc6e86607e099281f83234b6245",
+      "git_blob_sha": "bb76b83779177151a1c78f1a6edfd173cd4dbd13"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/selected_user_groups.csv",
+      "bytes": 2649,
+      "sha256": "e142701c153dc1a13ef953860c8aef9d14c1e3a6ea2491e83a9270d9df2a789d",
+      "git_blob_sha": "1515899dcad7867b477784617d5d27b087408fdf"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/status.json",
+      "bytes": 142,
+      "sha256": "455a7045079b72cc9474c581df1d72e02203235cb202b8aa9b74b7a33f3da394",
+      "git_blob_sha": "25ab1edf0cddfe868e26671b7d633c05d37a89ac"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/tag_vocabulary.json",
+      "bytes": 15550,
+      "sha256": "b259c335f0f3307f393be8daeea336d5bc146bf77a2967daf3c9a64b2eb06e75",
+      "git_blob_sha": "c61d6b7bbac21808c4e0ffd8ebe9330d403e280d"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2/validation_recommendation.json",
+      "bytes": 463,
+      "sha256": "06e9c8ad005cb6e0aaef1a5858b29518290825da5b150c55d2a4f656c93748c5",
+      "git_blob_sha": "7c59c8131acadc04f2f3192afd1153d811d6abee"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2_checkpoint_replay.log",
+      "bytes": 471,
+      "sha256": "15f9049ac0715b0da6681d105c69d449c9ce151d86c1c72ab6a16e12a0381429",
+      "git_blob_sha": "d94664b68108883c12959e53702a5bc0247f7c3a"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2_notebook_execution.log",
+      "bytes": 136,
+      "sha256": "8d5778f978abdb178548de4236e11bd6f7cd69a4e1ab6a841e3a3472a4119ebb",
+      "git_blob_sha": "51476e66ea3f2aec9893a9275f55aab102e8971a"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2_summary.log",
+      "bytes": 408,
+      "sha256": "c55381c082d872d080b1833008dc5bc417f9f765de1b2ba2b52a479655503a53",
+      "git_blob_sha": "fc4661ec5c168e455692f7fcc809ed96dd25bf54"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2_training.log",
+      "bytes": 6798,
+      "sha256": "eff5d71290a1fcf61b29b0f7bf3299484b7488fb84de634bb1b5def7a147c380",
+      "git_blob_sha": "8c99f0ff94b5cac7bc659701a2062ee31c85088a"
+    },
+    {
+      "path": "music_recommendation/outputs/phase2_unit_tests.log",
+      "bytes": 2326,
+      "sha256": "8aa8ece865b3b99284ddc7bcf482957e9dc53f0e7c53b1001fac50838fcaac06",
+      "git_blob_sha": "978e2ac7933616f881b421ff33e885ccd2bf9526"
+    },
+    {
+      "path": "music_recommendation/outputs/pytorch_cpu_install.log",
+      "bytes": 2466,
+      "sha256": "4b0432618503334e616b5996ced9580f1cfbf0506368ccf8bd2f53ba7c896126",
+      "git_blob_sha": "3e8c8c42ee8c9aa8d1e86e2ddd2b57203e875e9e"
+    },
+    {
+      "path": "music_recommendation/outputs/runtime.json",
+      "bytes": 324,
+      "sha256": "fe76f110c8dbf1017eb21cc08ac5b1d6fdb8d7394dcba887f245cebf33cb08d3",
+      "git_blob_sha": "fa4f99b2cbb94debe930c1247e12b652a2f36991"
+    },
+    {
+      "path": "music_recommendation/outputs/selection.json",
+      "bytes": 300,
+      "sha256": "cb7a709a8e7a11a1c7f47fb9c0502fcb136c35ef5cdb94ee4652a4fab6e8787d",
+      "git_blob_sha": "15e022d751cb8f8712369948702a41f6cbbeb316"
+    },
+    {
+      "path": "music_recommendation/outputs/source_manifest.json",
+      "bytes": 2490,
+      "sha256": "de9f80710240497d0ab50c194626a8c8d7bd8ad7b1dc1228738bf5d49cdd7480",
+      "git_blob_sha": "f5279f9be5421426eb4fad11dd3271c18c3589a7"
+    },
+    {
+      "path": "music_recommendation/outputs/split_manifest.json",
+      "bytes": 998,
+      "sha256": "d7b0f4f0ffb951d147cb354c2e83370745046e43b7b9f045decb125372a4ab88",
+      "git_blob_sha": "a944755199d551a8f04e5c7ba1147c61844a3817"
+    },
+    {
+      "path": "music_recommendation/outputs/unit_tests.log",
+      "bytes": 979,
+      "sha256": "9f012a85e5e28ad99193ce710fc3c4701ead47fbdd49b26fe591e27d04c3f141",
+      "git_blob_sha": "c35601a5716c46463d102fcdf77f2c6c2a613953"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_results.csv",
+      "bytes": 1952,
+      "sha256": "2cfe8748f337d3b0661530c7e7336de8fda5bc317696de633ba29325983825c7",
+      "git_blob_sha": "2ab8fd364ecfce95b30f4e8d257a9eaa76359382"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_uncertainty.json",
+      "bytes": 688,
+      "sha256": "24cac1255b6995273da20c2b4f4847d433970a18501685aba0f70a0882d84e82",
+      "git_blob_sha": "8b64d3fc4428cc1ed4dcb4b5135c6aa8ccdf1aac"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_user_groups.csv",
+      "bytes": 551,
+      "sha256": "d32a84a1e63a6a60a4ef16edd3eecb326b03fa0118594c4537c4ff5698360add",
+      "git_blob_sha": "9ccb68c6564033f02824deb4f92a8c72de6bcf95"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_itemcf_n100_s0.csv",
+      "bytes": 114786,
+      "sha256": "be25b9fe51c5c23b7aaf67013fd7dcd27dae8fe566e5fdc22ff69ffde59f15e8",
+      "git_blob_sha": "745406933c61ecb9ecc92d0634e10f8923c98863"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_itemcf_n100_s10.csv",
+      "bytes": 116175,
+      "sha256": "2980dc19aeb39fdb1394cf2d69b92b5042c7040bd4db35b3b4aaa8ce1a44fc8e",
+      "git_blob_sha": "9e19f86bc1596a53157d5e67ce867cfd49baf98b"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_itemcf_n20_s0.csv",
+      "bytes": 111975,
+      "sha256": "f1cec6a499a576f6aea564f1d324f58d45fc461fa8085ec25d7cfe2457d24f09",
+      "git_blob_sha": "a1203af94c6f4230dbb34b33af34586d97fee091"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_itemcf_n20_s10.csv",
+      "bytes": 115158,
+      "sha256": "d57f4e57881c39cbdf4c4676b09af48577dda1f3ac1a126eab2d644665063e5c",
+      "git_blob_sha": "ea21c44db440fba89de240044b1c11f599e0de1c"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_itemcf_n50_s0.csv",
+      "bytes": 112855,
+      "sha256": "c4f34adb20f23e74b0ec456380818f222aa06710648150009c787f5338441708",
+      "git_blob_sha": "67a08ac5fee81b6b5e57e99b1145889b2cd03d89"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_itemcf_n50_s10.csv",
+      "bytes": 115782,
+      "sha256": "b0950bbd12aa97f2326e213d1ca207da69d01f4235f6e7e9cf1b877991796b2d",
+      "git_blob_sha": "9cc799ac8bc15186ae6d41c47c7fca16c9e6c90a"
+    },
+    {
+      "path": "music_recommendation/outputs/validation_users_popularity.csv",
+      "bytes": 99376,
+      "sha256": "5aea30780589781311ee5fe53a9ddddd5d3a2b5ce5f0003b6da438a85fac99d7",
+      "git_blob_sha": "adad48829edbf9a1cb0dcc99f89d6051c7d821ad"
+    },
+    {
+      "path": "music_recommendation/outputs/verification_summary.json",
+      "bytes": 1945,
+      "sha256": "619c640b90d02da72bdbd32ea079f9b87362d3e942147784c89a73c74c484154",
+      "git_blob_sha": "e177a2d8fc3a78095cecb0c40f9bcf0c5d0500f7"
+    },
+    {
+      "path": "music_recommendation/outputs/windows_dependency_resolution.json",
+      "bytes": 1137968,
+      "sha256": "243a4a84d421a49eb3e11a97d0658019bdab7fc972c42802acadc4abed3c4c44",
+      "git_blob_sha": "8cdcdf901fc2f841f8d0d375da9719e9e624f8ad"
+    },
+    {
+      "path": "music_recommendation/outputs/windows_dependency_resolution.log",
+      "bytes": 28204,
+      "sha256": "4ea25ae1331b9212c9deea08bead988594475be9b11e914ced827de279e63679",
+      "git_blob_sha": "bc6ef3ca73894f9a177fd91322b430eb5ae82bc2"
+    },
+    {
+      "path": "music_recommendation/outputs/windows_preflight.json",
+      "bytes": 630,
+      "sha256": "4cdf277cbd56486eca09ebd9cc35d291851c7479607058444a2d1fd5394fb4a9",
+      "git_blob_sha": "fa0b9cd0b531cf9b9888c2e12df736a3a4d77ad7"
+    },
+    {
+      "path": "music_recommendation/outputs/windows_torch_wheel.log",
+      "bytes": 831,
+      "sha256": "7c029f1141312cb9ba033d89e98f2abd5069a57c90573dd0a07f2825e12c29ea",
+      "git_blob_sha": "db8b332269e113fe579e11f47392dd430d71e2f5"
+    },
+    {
+      "path": "music_recommendation/outputs/windows_wheels_check.log",
+      "bytes": 3380,
+      "sha256": "06bbd690acf19b6f3a79418f6fb27f4be56fbd22b91298fd92ec807a0d64f783",
+      "git_blob_sha": "32eb9e9fb95cc929c90c8e7eaaaf1606ad852cd8"
+    },
+    {
+      "path": "music_recommendation/requirements-phase2.txt",
+      "bytes": 135,
+      "sha256": "e310b9fa72d5fa9ee331409f039e5bebf4fffbabf2dd1f26bda1b5e87da498d2",
+      "git_blob_sha": "0678bf0bef8dc571591939f5491632c3d877d418"
+    },
+    {
+      "path": "music_recommendation/requirements.txt",
+      "bytes": 213,
+      "sha256": "d74ca08eb0108f6988375e859b4a1364f6e295db252d931325485ab51ecfd707",
+      "git_blob_sha": "78b06ad4fc87eba1ab00aaf45d6014294841ff7d"
+    },
+    {
+      "path": "music_recommendation/scripts/create_final_notebook.py",
+      "bytes": 5784,
+      "sha256": "4181b2dce4b3d3f3428d6a217aa4f64d63b8b68ec3c0aa9c0d10e3b52c5d40fa",
+      "git_blob_sha": "33880ed07b1ac919ee2b99e453af87e2cc6c1979"
+    },
+    {
+      "path": "music_recommendation/scripts/create_notebook.py",
+      "bytes": 7749,
+      "sha256": "bfe211aa08223a9df5b2fa47612b6bc9b1befd8595eb306a33323eda71148233",
+      "git_blob_sha": "c35ed4b7ffa5c863264ac9c262e5f493f7cba585"
+    },
+    {
+      "path": "music_recommendation/scripts/create_phase2_notebook.py",
+      "bytes": 7323,
+      "sha256": "a183bf120058f8a818c458cebe540b96692f136a2d16dadcc707739def6d5eb6",
+      "git_blob_sha": "3da657e25f77943f591980affe038a378880f356"
+    },
+    {
+      "path": "music_recommendation/scripts/download_data.py",
+      "bytes": 1558,
+      "sha256": "38a56a2df1648d7ee6d52ed6aed115bebda29132cbf2b0fd03e5ea8d966fba22",
+      "git_blob_sha": "ce3fefc67810a86f59e931e26a81a18bbb11d941"
+    },
+    {
+      "path": "music_recommendation/scripts/execute_notebook_inprocess.py",
+      "bytes": 2743,
+      "sha256": "db25a0fa6eecf3df6b0cde195e0fb9f7db5f70bb2a3583ebcf2e92089c694355",
+      "git_blob_sha": "371ec98d55e9b35c0bbb36d1e10aa95fdfcc73f3"
+    },
+    {
+      "path": "music_recommendation/scripts/freeze_final_decision.py",
+      "bytes": 4769,
+      "sha256": "5b540a9fb84b4546ca632ad21e7e9d8ac292da381e2c80d9ca20492dd5aad889",
+      "git_blob_sha": "5e1de420ddec8611b3201388c1fb1368d91c4caf"
+    },
+    {
+      "path": "music_recommendation/scripts/replay_phase2.py",
+      "bytes": 2190,
+      "sha256": "778b6ca4383944e2c0b85db82b5e0b007fffed824e5d01beb5e1fb123133898e",
+      "git_blob_sha": "05c7c132c4f3958c9066d30f0aeb61b1b5e39d81"
+    },
+    {
+      "path": "music_recommendation/scripts/run_final_once.py",
+      "bytes": 445,
+      "sha256": "8c3d216a2089ae867df5345d928bfe4c1ac083f4acf3d6e4ad1748cf688c75a7",
+      "git_blob_sha": "086aadbcd075e3a9395eca9e180197d0ef48ff9f"
+    },
+    {
+      "path": "music_recommendation/scripts/run_phase1.py",
+      "bytes": 495,
+      "sha256": "c65014e20c2154a2e6e01780217a65749c25aa38814d2fbb6198e7372eeb072c",
+      "git_blob_sha": "1195fc811a189fffda88400b5f3a7f49ae895131"
+    },
+    {
+      "path": "music_recommendation/scripts/run_phase2.py",
+      "bytes": 654,
+      "sha256": "2b3472d8b5f50422a47cb1e0c0b4d3fef9ec9660653bde8a2c8a9a37f4de3ffb",
+      "git_blob_sha": "4e3fdf2e945c01957866beb7112c96d1f883bceb"
+    },
+    {
+      "path": "music_recommendation/scripts/summarize_final.py",
+      "bytes": 5634,
+      "sha256": "8ef0eefc745af17a03d7c97a8c9916c4f1565107a36c5f83b385a80343bfb950",
+      "git_blob_sha": "ef06350b993ddf8fc91d06275ca33ee1a6991907"
+    },
+    {
+      "path": "music_recommendation/scripts/summarize_phase2.py",
+      "bytes": 5275,
+      "sha256": "0e20feb9621c10be9ca729f1c4b6591bfd9a3f2ef719e4697a857746651a825a",
+      "git_blob_sha": "4c25c29200f4220c0a6c0795d7db9ca243fb1ab9"
+    },
+    {
+      "path": "music_recommendation/scripts/verify_windows.py",
+      "bytes": 4171,
+      "sha256": "e6716737080e834c920ddc7af9e36dda4f6ef048952ee6c18273f09977f473da",
+      "git_blob_sha": "eb53d7871e1ce64bfada203bab02f116d97263f1"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/__init__.py",
+      "bytes": 63,
+      "sha256": "6b63db7394041490e291711f913e5ccb6031103bf5b2e4e226930e35ba6d8b82",
+      "git_blob_sha": "2ae7def2d71d3b5abea4aa9a1f7d17aec224a46a"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/content.py",
+      "bytes": 3820,
+      "sha256": "d84964a2aaef64b24f51e4cd8577acda261dee982ea58abde28972c05f7ebcbf",
+      "git_blob_sha": "862ec56f8225e39e9d61395a8de2087090b91da1"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/data.py",
+      "bytes": 5828,
+      "sha256": "7ce3bad3796ab18704bcc5cebcc23945314aaa02ba387acd8507f63cf6fecbbd",
+      "git_blob_sha": "e9decfe6d72c4890abe99320d577651c5082de50"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/evaluation.py",
+      "bytes": 3395,
+      "sha256": "2a873a5659e33891c544df114179e620393574d0c92db5cdac1736579ba32161",
+      "git_blob_sha": "1a84e28f1b7a6f8c1af7f93f0d330e93275c1523"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/final_evaluation.py",
+      "bytes": 13947,
+      "sha256": "4c90335402eb22ad16804a22a946a3177948314e6683b71fcf8160eee9385f99",
+      "git_blob_sha": "8648b01045e5144f030c695eb9c91289d945dc69"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/models.py",
+      "bytes": 2518,
+      "sha256": "4bfcf7743142a481244c7cc52160e04ed31cd3a3a372c2108fa3a92d775e29aa",
+      "git_blob_sha": "d767fd84cb6f2d8594b3dc5c2e850c4e88473f17"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/neural.py",
+      "bytes": 4798,
+      "sha256": "1c84398d042054def57b550134c2ef495512f83fabd95048b19fc2587497bf51",
+      "git_blob_sha": "69e38f949580d7b9bc0d35f92013f4ea8afdb575"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/phase2.py",
+      "bytes": 9874,
+      "sha256": "a76ceb72b084c1d44669cafa812d2ef756ba570ba9fb60a2a578f2ecd4b5c5de",
+      "git_blob_sha": "c0cb69512f87e9f657b7c5eeba8a584993893553"
+    },
+    {
+      "path": "music_recommendation/src/musicrec/pipeline.py",
+      "bytes": 9355,
+      "sha256": "c197f7929503b13cb7f598f4be679f8e7fa474f152247ff5a20d1fd213225643",
+      "git_blob_sha": "b42a1910ab4358d0bfc9b953f046c52e9543ad92"
+    },
+    {
+      "path": "music_recommendation/tests/test_final_protocol.py",
+      "bytes": 1970,
+      "sha256": "96321ccf5b7392119c4b8f6467ef22c9c687203abf0fd7bbafa033581595b393",
+      "git_blob_sha": "7a113593e3cb046d57f9842f7087ca969c63b3cd"
+    },
+    {
+      "path": "music_recommendation/tests/test_neural.py",
+      "bytes": 6233,
+      "sha256": "1f1418471702b04eae8945d1eebfa25c5f85e8ba821e3cce4acd85bea6b6aee2",
+      "git_blob_sha": "1c13889b0281d6aa00fc414d81b18584d497f220"
+    },
+    {
+      "path": "music_recommendation/tests/test_protocol.py",
+      "bytes": 3964,
+      "sha256": "43330e2cfa28781d7ed16b79c8f4f657c2621bebbe3ba5e8b6cf2f2bd8fd0b57",
+      "git_blob_sha": "2819487dc1212db8a09b18001864d1d521712e8a"
+    }
+  ]
+}

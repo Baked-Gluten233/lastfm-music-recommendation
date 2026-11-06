@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "policy": "user degree >=5: floor(n/10), at least 1 for validation and test; remainder train; lower degree train only",
+  "temporal": false,
+  "train_rows": 74308,
+  "validation_rows": 9263,
+  "test_rows": 9263,
+  "train_users": 1892,
+  "validation_users": 1877,
+  "training_only_low_degree_users": 15,
+  "catalogue_size": 17632,
+  "train_observed_artists": 15422,
+  "candidate_set": "all IDs in artists.dat minus the user's train history; no negative sampling; no validation/test-informed filtering",
+  "primary_metric": "macro NDCG@10 on validation; cold targets retained",
+  "tie_break": "score descending, TRAIN user-frequency descending, original artist ID ascending",
+  "test_metrics_evaluated": false,
+  "split_sha256": {
+    "train": "50b0550fbf709fa33b62bb699b1d2d43467f1528aa181eaeaae626d19549cd75",
+    "validation": "2e31ac6628e767268c9c0d00eda6ca1d73a746e2d148c3b100af9ea0b675edb4",
+    "test": "81bb4dee464514831306de5f0bc9ba306d9c80f61bdfb8f96d81ebf5fcfe73e8"
+  }
+}

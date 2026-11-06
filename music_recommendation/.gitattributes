@@ -1,0 +1,13 @@
+# Preserve experiment hashes across Windows/Linux Git checkouts.
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.ipynb text eol=lf
+*.yml text eol=lf
+*.dat -text
+*.npz binary
+*.npy binary
+*.zip binary
+*.png binary

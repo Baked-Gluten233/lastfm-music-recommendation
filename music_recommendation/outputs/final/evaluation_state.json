@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "decision_sha256": "24a047dabfa2fffeb57f6c0b38e5191fb73626778c65f4502ad07dcd836c84a7",
+  "refit_started_at_utc": "2026-11-06T08:22:10.189726+00:00",
+  "test_labels_read": true,
+  "test_metrics_evaluated": true,
+  "all_checkpoints_saved_at_utc": "2026-11-06T08:23:06.367698+00:00",
+  "checkpoint_count": 11,
+  "known_history_rows": 83571,
+  "known_history_users": 1892,
+  "known_history_artists": 16582,
+  "test_evaluation_started_at_utc": "2026-11-06T08:23:06.368065+00:00",
+  "completed_at_utc": "2026-11-06T08:23:55.592316+00:00",
+  "evaluated_runs": 11,
+  "test_users": 1877,
+  "test_interactions": 9263,
+  "test_cold_interactions": 1073,
+  "primary_model_unchanged": "itemcf_n100_s10",
+  "test_used_for_tuning": false,
+  "windows_execution_verified": false,
+  "torch": "2.9.1+cpu"
+}

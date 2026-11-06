@@ -1,0 +1,47 @@
+{
+  "unit_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "source_compile_check": "passed",
+  "native_jupyter_kernel_execution": "blocked: local communication unavailable before cell execution",
+  "ipython_sequential_notebook_execution": {
+    "code_cells": 8,
+    "png_outputs": 3,
+    "errors": 0
+  },
+  "notebook_schema": "valid",
+  "windows_native_execution": "not performed; native acceptance runner and optional untriggered CI workflow supplied",
+  "windows_direct_wheels": "all 8 fixed direct requirements found for CPython 3.12 win_amd64 or universal wheels",
+  "windows_target_resolution": "pip target resolution passed on Linux; host OS markers not a substitute for Windows installation",
+  "test_metrics_evaluated": true,
+  "second_execution_numeric_results": "same baseline metrics as first execution",
+  "figures_visual_review": "3 figures inspected: titles, axes, no clipping",
+  "independent_review": "data archive consistency, all split hashes and union, aggregate vs per-user metrics, no test evaluation confirmed",
+  "phase2_training_runs": 12,
+  "phase2_checkpoint_replay": {
+    "count": 9,
+    "max_abs_metric_error": 9.194034422677078e-17,
+    "passed": true
+  },
+  "phase2_notebook_execution": {
+    "mode": "IPython in-process; actual checkpoint re-scoring, not refitting training",
+    "code_cells": 7,
+    "png_displays": 2,
+    "errors": 0
+  },
+  "windows_torch_cpu_wheel": "torch-2.9.1+cpu-cp312-cp312-win_amd64.whl found at official PyTorch CPU index",
+  "final_model_frozen": true,
+  "final_primary_model": "itemcf_n100_s10",
+  "final_decision_frozen": true,
+  "final_test_evaluation_rounds": 1,
+  "final_evaluated_runs": 11,
+  "final_test_used_for_tuning": false,
+  "final_notebook": {
+    "real_code_cells": 6,
+    "png_outputs": 2,
+    "execution": "IPython in-process",
+    "behavior": "verify saved final artifacts only; no re-reading or re-scoring test labels"
+  },
+  "reports_and_slides_included": false
+}

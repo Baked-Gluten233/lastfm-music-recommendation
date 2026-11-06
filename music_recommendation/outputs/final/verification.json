@@ -1,0 +1,11 @@
+{
+  "freeze_and_evidence_hashes": "passed",
+  "chronology": "all eleven checkpoints saved before test was read",
+  "checkpoint_hashes": 11,
+  "individual_runs_aggregates_verified": 11,
+  "five_model_mean_and_sample_sd": "passed",
+  "actual_training_epochs_match_frozen_values": true,
+  "primary_model_still_frozen_itemcf": true,
+  "test_labels_reread_for_this_verification": false,
+  "test_scores_recomputed_for_this_verification": false
+}

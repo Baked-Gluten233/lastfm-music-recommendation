@@ -1,0 +1,54 @@
+{
+  "source": "https://files.grouplens.org/datasets/hetrec2011/hetrec2011-lastfm-2k.zip",
+  "license": "Dataset README: non-commercial use; cite Last.fm and HetRec 2011",
+  "users": 1892,
+  "catalogue_artists": 17632,
+  "listened_artists": 17632,
+  "interactions": 92834,
+  "density": 0.002782815119924182,
+  "sparsity": 0.9972171848800758,
+  "duplicate_pairs": 0,
+  "missing_interaction_values": {
+    "userID": 0,
+    "artistID": 0,
+    "weight": 0
+  },
+  "missing_artist_values": {
+    "id": 0,
+    "name": 0,
+    "url": 0,
+    "pictureURL": 444
+  },
+  "nonpositive_weights": 0,
+  "weight_quantiles": {
+    "0.0": 1.0,
+    "0.5": 260.0,
+    "0.9": 1387.0,
+    "0.99": 7228.009999999995,
+    "1.0": 352698.0
+  },
+  "user_degree_quantiles": {
+    "0.0": 1.0,
+    "0.5": 50.0,
+    "0.9": 50.0,
+    "1.0": 50.0
+  },
+  "users_with_50_artists": 1829,
+  "artists_with_one_listener": 10679,
+  "tag_vocabulary": 11946,
+  "tag_events": 186479,
+  "tag_event_unknown_artists": 1538,
+  "tag_event_unknown_tags": 0,
+  "tag_event_duplicate_rows": 0,
+  "listening_timestamp_available": false,
+  "tag_timestamp_is_listening_timestamp": false,
+  "raw_files_sha256": {
+    "artists.dat": "c173881362c6b28551368fecb3c0be5a6a30a6cd859e1f5775413dfe46d48648",
+    "readme.txt": "6fe5d1e6f67b025fc50cd70883dd1a1ff16c5ff37b5b7abfb33644b83468b209",
+    "tags.dat": "e95175f259be4c0c47644ae23d66131cd6d5767142a1405000e79f5584691d70",
+    "user_artists.dat": "001400dc3c7d2667fca6e4ea6dc6acc31a9dd28ad5cd0f74cea988c019934d3b",
+    "user_friends.dat": "9a3a8f7fa5f5ec832335e5b58ed69a4cf27c6f6f6afcde62134810eea46445a7",
+    "user_taggedartists-timestamps.dat": "ec753318e453b15356853674b687da44d9f8c7e1215e1e0ff27aaa5f52e322bd",
+    "user_taggedartists.dat": "d31fe938fcfeed6f0059f37a36b156f63674d073fc2553e5cc9dc1595e365bc7"
+  }
+}

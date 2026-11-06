@@ -1,0 +1,9 @@
+{
+  "contrast": "frozen ItemCF minus Popularity, per-user NDCG@10",
+  "mean": 0.10656987669186728,
+  "lower_95": 0.10001843394071695,
+  "upper_95": 0.11383859355540119,
+  "samples": 1000,
+  "seed": 2026,
+  "limitation": "conditional on this split and these trained models; not split uncertainty, not an online causal effect"
+}

@@ -1,0 +1,122 @@
+{
+  "frozen_at_utc": "2026-11-06T08:20:04.378657+00:00",
+  "selected_primary_model": {
+    "family": "itemcf",
+    "neighbors": 100,
+    "shrinkage": 10.0
+  },
+  "selection_evidence": "Validation macro NDCG@10: ItemCF 0.144628987; chosen neural configuration means below this",
+  "comparison_families": [
+    "popularity",
+    "itemcf",
+    "bpr_mf",
+    "neumf",
+    "content_two_tower"
+  ],
+  "neural_models": [
+    {
+      "family": "bpr_mf",
+      "dim": 32,
+      "lr": 0.005,
+      "validation_selected_epochs": [
+        4,
+        8,
+        4
+      ],
+      "final_epochs": 4,
+      "seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "family": "neumf",
+      "dim": 16,
+      "lr": 0.003,
+      "validation_selected_epochs": [
+        20,
+        24,
+        24
+      ],
+      "final_epochs": 24,
+      "seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "family": "content_two_tower",
+      "dim": 32,
+      "lr": 0.003,
+      "validation_selected_epochs": [
+        12,
+        24,
+        8
+      ],
+      "final_epochs": 12,
+      "seeds": [
+        42,
+        43,
+        44
+      ]
+    }
+  ],
+  "epoch_rule": "Median of the three existing selected-configuration validation-selected epochs; chosen now before reading test labels, not specified numerically in phase1",
+  "training_data": "train.csv + validation.csv, every model refitted on this same known history",
+  "optimizer": "Adam",
+  "weight_decay": 0.0001,
+  "batch_size": 1024,
+  "threads": 4,
+  "device": "cpu",
+  "training_negative_sampling": "one uniformly sampled train+validation-warm artist absent from that user known history per positive per epoch; never consult test",
+  "content_features": {
+    "allowed_pairs": "train + validation only",
+    "min_df": 2,
+    "max_features": 2000,
+    "max_tags": 32,
+    "vocabulary_order": "descending known-history artist document frequency, then numeric tagID",
+    "idf_documents": "known-history observed artists, including empty documents",
+    "unknown_feature": true
+  },
+  "neural_cold_scores": "minimum warm score for that user minus 1; cold artists remain candidates and denominators",
+  "evaluation": {
+    "primary_metric": "user-macro NDCG@10",
+    "ks": [
+      10,
+      20
+    ],
+    "metrics": [
+      "precision",
+      "recall",
+      "ndcg",
+      "hit_rate",
+      "catalogue_coverage@10"
+    ],
+    "candidates": "all artists.dat IDs minus user train+validation history; no sampled evaluation negatives",
+    "tie_break": "score descending, known-history user frequency descending, original artist ID ascending",
+    "groups": [
+      "all",
+      "has_cold_target",
+      "all_targets_warm",
+      "known_history_degree_below_30"
+    ],
+    "neural_aggregation": "report all seeds and mean/sample SD ddof=1; no seed selection or score ensemble",
+    "bootstrap": "1000 user resamples, seed2026, primary ItemCF-minus-Popularity NDCG@10 contrast only"
+  },
+  "case_user_ids": [
+    2,
+    3,
+    4
+  ],
+  "test_split_sha256": "81bb4dee464514831306de5f0bc9ba306d9c80f61bdfb8f96d81ebf5fcfe73e8",
+  "evidence_sha256": {
+    "outputs/phase2/all_runs.csv": "df76876dcc554b8eb9f3c51a2047277f16dbdb4409063f8cca6bdf636e363060",
+    "outputs/phase2/selected_configs.json": "570891334b209e00cefa97026cab51acfd0cdaea5f844263853dbfa65da99245",
+    "outputs/split_manifest.json": "d7b0f4f0ffb951d147cb354c2e83370745046e43b7b9f045decb125372a4ab88"
+  },
+  "test_labels_read_for_this_decision": false,
+  "test_metrics_available_at_freeze": false,
+  "test_policy": "Train and save all final checkpoints before reading test.csv. One final evaluation round for all frozen comparisons. Never retune or replace primary model from test results."
+}

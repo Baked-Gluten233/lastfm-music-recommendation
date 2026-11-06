@@ -1,0 +1,12 @@
+{
+  "phase": 1,
+  "selected_itemcf_baseline": "itemcf_n100_s10",
+  "selection_metric": "validation macro NDCG@10",
+  "final_model_selected": false,
+  "remaining_models": [
+    "BPR-MF",
+    "NeuMF",
+    "content two-tower (leakage-safe feature gate required)"
+  ],
+  "test_metrics_evaluated": false
+}

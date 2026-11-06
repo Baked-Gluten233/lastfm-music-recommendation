@@ -1,0 +1,24 @@
+{
+  "popularity_ndcg10": {
+    "mean": 0.057248989424152366,
+    "lower_95": 0.05154511415846016,
+    "upper_95": 0.06287481407816536,
+    "samples": 1000,
+    "seed": 2026
+  },
+  "selected_itemcf_ndcg10": {
+    "mean": 0.14462898736801894,
+    "lower_95": 0.13668335889454733,
+    "upper_95": 0.15329836808106234,
+    "samples": 1000,
+    "seed": 2026
+  },
+  "paired_itemcf_minus_popularity_ndcg10": {
+    "mean": 0.0873799979438666,
+    "lower_95": 0.08144273993160885,
+    "upper_95": 0.09355101090907939,
+    "samples": 1000,
+    "seed": 2026
+  },
+  "caution": "Validation split only; tuned-winner selection and random-split variability are not covered. No final superiority claim."
+}

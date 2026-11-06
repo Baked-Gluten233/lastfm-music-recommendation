@@ -1,0 +1,54 @@
+{
+  "grid": [
+    {
+      "family": "bpr_mf",
+      "dim": 32,
+      "lr": 0.005
+    },
+    {
+      "family": "bpr_mf",
+      "dim": 32,
+      "lr": 0.01
+    },
+    {
+      "family": "neumf",
+      "dim": 16,
+      "lr": 0.001
+    },
+    {
+      "family": "neumf",
+      "dim": 16,
+      "lr": 0.003
+    },
+    {
+      "family": "content_two_tower",
+      "dim": 32,
+      "lr": 0.001
+    },
+    {
+      "family": "content_two_tower",
+      "dim": 32,
+      "lr": 0.003
+    }
+  ],
+  "tuning_seed": 42,
+  "repeat_seeds": [
+    43,
+    44
+  ],
+  "max_epochs": 24,
+  "validation_every": 4,
+  "patience_evaluations": 3,
+  "selection": "macro validation NDCG@10; minimum improvement 1e-5; ties choose lower learning rate",
+  "optimizer": "Adam with coupled L2 weight_decay=1e-4",
+  "batch_size": 1024,
+  "negative_sampling": "one uniform train-warm artist absent from user TRAIN per positive per epoch; validation/test never excluded",
+  "cold_score": "strictly below minimum warm model score; retained candidates, not random untrained ID scores",
+  "device": "cpu",
+  "threads": 4,
+  "torch": "2.9.1+cpu",
+  "windows_execution_verified": false,
+  "test_file_read": false,
+  "test_metrics_evaluated": false,
+  "feature_build_seconds": 0.33869660100003784
+}

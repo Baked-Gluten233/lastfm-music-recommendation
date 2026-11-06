@@ -1,0 +1,14 @@
+test_cold_targets_retained (test_protocol.ProtocolTests.test_cold_targets_retained) ... ok
+test_cosine_shrinkage_integer_and_cold (test_protocol.ProtocolTests.test_cosine_shrinkage_integer_and_cold) ... ok
+test_directed_neighbor_orientation (test_protocol.ProtocolTests.test_directed_neighbor_orientation) ... ok
+test_exact_metrics (test_protocol.ProtocolTests.test_exact_metrics) ... ok
+test_invalid_metric_inputs (test_protocol.ProtocolTests.test_invalid_metric_inputs) ... ok
+test_neighbor_and_ks_validation (test_protocol.ProtocolTests.test_neighbor_and_ks_validation) ... ok
+test_overlap_rejected (test_protocol.ProtocolTests.test_overlap_rejected) ... ok
+test_seen_mask_and_ties (test_protocol.ProtocolTests.test_seen_mask_and_ties) ... ok
+test_split_disjoint_complete_and_order_invariant (test_protocol.ProtocolTests.test_split_disjoint_complete_and_order_invariant) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.016s
+
+OK

@@ -1,0 +1,527 @@
+[
+  {
+    "userID": 2,
+    "selection_rule": "first three validation user IDs, fixed before test was read",
+    "known_history_examples": [
+      {
+        "artistID": 51,
+        "name": "Duran Duran",
+        "listening_count": 13883
+      },
+      {
+        "artistID": 52,
+        "name": "Morcheeba",
+        "listening_count": 11690
+      },
+      {
+        "artistID": 53,
+        "name": "Air",
+        "listening_count": 11351
+      },
+      {
+        "artistID": 54,
+        "name": "Hooverphonic",
+        "listening_count": 10300
+      },
+      {
+        "artistID": 55,
+        "name": "Kylie Minogue",
+        "listening_count": 8983
+      }
+    ],
+    "test_artists": [
+      {
+        "artistID": 63,
+        "name": "Enigma"
+      },
+      {
+        "artistID": 83,
+        "name": "Cock Robin"
+      },
+      {
+        "artistID": 85,
+        "name": "Spandau Ballet"
+      },
+      {
+        "artistID": 94,
+        "name": "Ministry of Sound"
+      },
+      {
+        "artistID": 97,
+        "name": "Duffy"
+      }
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "artistID": 1001,
+        "name": "Pet Shop Boys",
+        "score": 2.3650251253893506,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 51,
+          "name": "Duran Duran",
+          "similarity_contribution": 0.32527110380374974
+        }
+      },
+      {
+        "rank": 2,
+        "artistID": 159,
+        "name": "The Cure",
+        "score": 2.273281237016643,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 72,
+          "name": "Depeche Mode",
+          "similarity_contribution": 0.3737297814038815
+        }
+      },
+      {
+        "rank": 3,
+        "artistID": 289,
+        "name": "Britney Spears",
+        "score": 2.2505304252904583,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 89,
+          "name": "Lady Gaga",
+          "similarity_contribution": 0.6894483751710242
+        }
+      },
+      {
+        "rank": 4,
+        "artistID": 288,
+        "name": "Rihanna",
+        "score": 2.1651303108387103,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 89,
+          "name": "Lady Gaga",
+          "similarity_contribution": 0.6673753321798502
+        }
+      },
+      {
+        "rank": 5,
+        "artistID": 154,
+        "name": "Radiohead",
+        "score": 2.1247828356735083,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 65,
+          "name": "Coldplay",
+          "similarity_contribution": 0.32284496159200105
+        }
+      },
+      {
+        "rank": 6,
+        "artistID": 997,
+        "name": "The Human League",
+        "score": 2.1187800137774095,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 51,
+          "name": "Duran Duran",
+          "similarity_contribution": 0.3092546785718019
+        }
+      },
+      {
+        "rank": 7,
+        "artistID": 292,
+        "name": "Christina Aguilera",
+        "score": 2.0767135261114325,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 89,
+          "name": "Lady Gaga",
+          "similarity_contribution": 0.6018088359332955
+        }
+      },
+      {
+        "rank": 8,
+        "artistID": 295,
+        "name": "Beyoncé",
+        "score": 2.035548249649619,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 89,
+          "name": "Lady Gaga",
+          "similarity_contribution": 0.5900282417324586
+        }
+      },
+      {
+        "rank": 9,
+        "artistID": 1014,
+        "name": "Erasure",
+        "score": 2.006863732326077,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 72,
+          "name": "Depeche Mode",
+          "similarity_contribution": 0.2872758285626165
+        }
+      },
+      {
+        "rank": 10,
+        "artistID": 300,
+        "name": "Katy Perry",
+        "score": 1.9873362887835833,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 89,
+          "name": "Lady Gaga",
+          "similarity_contribution": 0.6627137477727877
+        }
+      }
+    ]
+  },
+  {
+    "userID": 3,
+    "selection_rule": "first three validation user IDs, fixed before test was read",
+    "known_history_examples": [
+      {
+        "artistID": 101,
+        "name": "Pleq",
+        "listening_count": 13176
+      },
+      {
+        "artistID": 102,
+        "name": "Segue",
+        "listening_count": 662
+      },
+      {
+        "artistID": 103,
+        "name": "Max Richter",
+        "listening_count": 493
+      },
+      {
+        "artistID": 104,
+        "name": "Celer",
+        "listening_count": 431
+      },
+      {
+        "artistID": 105,
+        "name": "Pjusk",
+        "listening_count": 403
+      }
+    ],
+    "test_artists": [
+      {
+        "artistID": 111,
+        "name": "Pleq & Anna Rose Carter"
+      },
+      {
+        "artistID": 112,
+        "name": "Go Koyashiki"
+      },
+      {
+        "artistID": 128,
+        "name": "strom noir"
+      },
+      {
+        "artistID": 129,
+        "name": "Aless"
+      },
+      {
+        "artistID": 150,
+        "name": "Porzellan"
+      }
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "artistID": 1736,
+        "name": "Balmorhea",
+        "score": 0.3358422317919458,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 103,
+          "name": "Max Richter",
+          "similarity_contribution": 0.15891043154093207
+        }
+      },
+      {
+        "rank": 2,
+        "artistID": 3506,
+        "name": "Ryoji Ikeda",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 3,
+        "artistID": 7010,
+        "name": "Magnitarus",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 4,
+        "artistID": 7011,
+        "name": "Blind Divine",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 5,
+        "artistID": 7014,
+        "name": "Phaeleh",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 6,
+        "artistID": 7016,
+        "name": "Bad Sector",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 7,
+        "artistID": 7019,
+        "name": "Silencide",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 8,
+        "artistID": 7020,
+        "name": "ksandr and I.M.M.U.R.E.",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 9,
+        "artistID": 7022,
+        "name": "Noto",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      },
+      {
+        "rank": 10,
+        "artistID": 7024,
+        "name": "Jagjit Singh",
+        "score": 0.20287914962510284,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 148,
+          "name": "The Boats",
+          "similarity_contribution": 0.06428243465332249
+        }
+      }
+    ]
+  },
+  {
+    "userID": 4,
+    "selection_rule": "first three validation user IDs, fixed before test was read",
+    "known_history_examples": [
+      {
+        "artistID": 151,
+        "name": "Deep Forest",
+        "listening_count": 1807
+      },
+      {
+        "artistID": 152,
+        "name": "Porcupine Tree",
+        "listening_count": 1208
+      },
+      {
+        "artistID": 153,
+        "name": "De/Vision",
+        "listening_count": 903
+      },
+      {
+        "artistID": 154,
+        "name": "Radiohead",
+        "listening_count": 826
+      },
+      {
+        "artistID": 155,
+        "name": "Robbie Williams",
+        "listening_count": 777
+      }
+    ],
+    "test_artists": [
+      {
+        "artistID": 64,
+        "name": "Röyksopp"
+      },
+      {
+        "artistID": 72,
+        "name": "Depeche Mode"
+      },
+      {
+        "artistID": 157,
+        "name": "Michael Jackson"
+      },
+      {
+        "artistID": 162,
+        "name": "God Is an Astronaut"
+      },
+      {
+        "artistID": 187,
+        "name": "a-ha"
+      }
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "artistID": 72,
+        "name": "Depeche Mode",
+        "score": 3.606047908987198,
+        "test_hit": true,
+        "explanation": {
+          "largest_known_history_contributor_id": 159,
+          "name": "The Cure",
+          "similarity_contribution": 0.3737297814038816
+        }
+      },
+      {
+        "rank": 2,
+        "artistID": 227,
+        "name": "The Beatles",
+        "score": 3.2500500665326273,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 163,
+          "name": "Pink Floyd",
+          "similarity_contribution": 0.3637865799420592
+        }
+      },
+      {
+        "rank": 3,
+        "artistID": 229,
+        "name": "The Killers",
+        "score": 2.632046495286249,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 190,
+          "name": "Muse",
+          "similarity_contribution": 0.3650814384087984
+        }
+      },
+      {
+        "rank": 4,
+        "artistID": 511,
+        "name": "U2",
+        "score": 2.462413654583472,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 65,
+          "name": "Coldplay",
+          "similarity_contribution": 0.26103780663955617
+        }
+      },
+      {
+        "rank": 5,
+        "artistID": 599,
+        "name": "David Bowie",
+        "score": 2.1772848846474235,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 159,
+          "name": "The Cure",
+          "similarity_contribution": 0.2794885051688461
+        }
+      },
+      {
+        "rank": 6,
+        "artistID": 533,
+        "name": "Oasis",
+        "score": 2.13866728830575,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 65,
+          "name": "Coldplay",
+          "similarity_contribution": 0.30035866030581865
+        }
+      },
+      {
+        "rank": 7,
+        "artistID": 67,
+        "name": "Madonna",
+        "score": 2.0158663856577568,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 161,
+          "name": "Enrique Iglesias",
+          "similarity_contribution": 0.24062509047233996
+        }
+      },
+      {
+        "rank": 8,
+        "artistID": 207,
+        "name": "Arctic Monkeys",
+        "score": 1.985563036936755,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 190,
+          "name": "Muse",
+          "similarity_contribution": 0.34617638090440644
+        }
+      },
+      {
+        "rank": 9,
+        "artistID": 89,
+        "name": "Lady Gaga",
+        "score": 1.9065951241865038,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 161,
+          "name": "Enrique Iglesias",
+          "similarity_contribution": 0.28293869028371016
+        }
+      },
+      {
+        "rank": 10,
+        "artistID": 959,
+        "name": "Queen",
+        "score": 1.8199909716991556,
+        "test_hit": false,
+        "explanation": {
+          "largest_known_history_contributor_id": 163,
+          "name": "Pink Floyd",
+          "similarity_contribution": 0.2950102016440633
+        }
+      }
+    ]
+  }
+]

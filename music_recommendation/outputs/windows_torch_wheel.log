@@ -1,0 +1,8 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch==2.9.1
+  Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.9.1%2Bcpu-cp312-cp312-win_amd64.whl.metadata (29 kB)
+Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.9.1%2Bcpu-cp312-cp312-win_amd64.whl (110.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.9/110.9 MB 48.6 MB/s eta 0:00:00
+Saved /tmp/music-windows-torch/torch-2.9.1+cpu-cp312-cp312-win_amd64.whl
+Successfully downloaded torch

@@ -1,0 +1,42 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Collecting numpy==2.3.5 (from -r requirements.txt (line 2))
+  Downloading numpy-2.3.5-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting scipy==1.17.0 (from -r requirements.txt (line 3))
+  Downloading scipy-1.17.0-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting pandas==2.2.3 (from -r requirements.txt (line 4))
+  Downloading pandas-2.2.3-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Collecting matplotlib==3.10.8 (from -r requirements.txt (line 5))
+  Downloading matplotlib-3.10.8-cp312-cp312-win_amd64.whl.metadata (52 kB)
+Collecting nbformat==5.10.4 (from -r requirements.txt (line 6))
+  Downloading nbformat-5.10.4-py3-none-any.whl.metadata (3.6 kB)
+Collecting nbclient==0.10.2 (from -r requirements.txt (line 7))
+  Downloading nbclient-0.10.2-py3-none-any.whl.metadata (8.3 kB)
+Collecting ipykernel==6.29.5 (from -r requirements.txt (line 8))
+  Downloading ipykernel-6.29.5-py3-none-any.whl.metadata (6.3 kB)
+Collecting jupyterlab==4.4.10 (from -r requirements.txt (line 9))
+  Downloading jupyterlab-4.4.10-py3-none-any.whl.metadata (16 kB)
+Downloading numpy-2.3.5-cp312-cp312-win_amd64.whl (12.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 38.3 MB/s eta 0:00:00
+Downloading scipy-1.17.0-cp312-cp312-win_amd64.whl (36.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.3/36.3 MB 48.1 MB/s eta 0:00:00
+Downloading pandas-2.2.3-cp312-cp312-win_amd64.whl (11.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.5/11.5 MB 42.0 MB/s eta 0:00:00
+Downloading matplotlib-3.10.8-cp312-cp312-win_amd64.whl (8.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 35.8 MB/s eta 0:00:00
+Downloading nbformat-5.10.4-py3-none-any.whl (78 kB)
+Downloading nbclient-0.10.2-py3-none-any.whl (25 kB)
+Downloading ipykernel-6.29.5-py3-none-any.whl (117 kB)
+Downloading jupyterlab-4.4.10-py3-none-any.whl (12.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 39.9 MB/s eta 0:00:00
+Saved /tmp/music-windows-wheel-check/numpy-2.3.5-cp312-cp312-win_amd64.whl
+Saved /tmp/music-windows-wheel-check/scipy-1.17.0-cp312-cp312-win_amd64.whl
+Saved /tmp/music-windows-wheel-check/pandas-2.2.3-cp312-cp312-win_amd64.whl
+Saved /tmp/music-windows-wheel-check/matplotlib-3.10.8-cp312-cp312-win_amd64.whl
+Saved /tmp/music-windows-wheel-check/nbformat-5.10.4-py3-none-any.whl
+Saved /tmp/music-windows-wheel-check/nbclient-0.10.2-py3-none-any.whl
+Saved /tmp/music-windows-wheel-check/ipykernel-6.29.5-py3-none-any.whl
+Saved /tmp/music-windows-wheel-check/jupyterlab-4.4.10-py3-none-any.whl
+Successfully downloaded numpy scipy pandas matplotlib nbformat nbclient ipykernel jupyterlab
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip

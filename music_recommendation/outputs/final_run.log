@@ -1,0 +1,20 @@
+Final refit saved: bpr_mf_seed42, fixed epochs=4, train=0.67s
+Final refit saved: bpr_mf_seed43, fixed epochs=4, train=0.62s
+Final refit saved: bpr_mf_seed44, fixed epochs=4, train=0.57s
+Final refit saved: neumf_seed42, fixed epochs=24, train=7.43s
+Final refit saved: neumf_seed43, fixed epochs=24, train=7.35s
+Final refit saved: neumf_seed44, fixed epochs=24, train=7.05s
+Final refit saved: content_two_tower_seed42, fixed epochs=12, train=10.37s
+Final refit saved: content_two_tower_seed43, fixed epochs=12, train=10.19s
+Final refit saved: content_two_tower_seed44, fixed epochs=12, train=9.07s
+Frozen test result: popularity, NDCG@10=0.065566
+Frozen test result: itemcf, NDCG@10=0.172136
+Frozen test result: bpr_mf_seed42, NDCG@10=0.091298
+Frozen test result: bpr_mf_seed43, NDCG@10=0.088443
+Frozen test result: bpr_mf_seed44, NDCG@10=0.079340
+Frozen test result: neumf_seed42, NDCG@10=0.089489
+Frozen test result: neumf_seed43, NDCG@10=0.092227
+Frozen test result: neumf_seed44, NDCG@10=0.096651
+Frozen test result: content_two_tower_seed42, NDCG@10=0.115166
+Frozen test result: content_two_tower_seed43, NDCG@10=0.108640
+Frozen test result: content_two_tower_seed44, NDCG@10=0.113147

@@ -1,0 +1,23 @@
+[
+  {
+    "family": "bpr_mf",
+    "dim": 32,
+    "lr": 0.005,
+    "tuning_run": "bpr_mf_lr0.005_seed42",
+    "tuning_ndcg10": 0.08182312446320351
+  },
+  {
+    "family": "neumf",
+    "dim": 16,
+    "lr": 0.003,
+    "tuning_run": "neumf_lr0.003_seed42",
+    "tuning_ndcg10": 0.08103720202066907
+  },
+  {
+    "family": "content_two_tower",
+    "dim": 32,
+    "lr": 0.003,
+    "tuning_run": "content_two_tower_lr0.003_seed42",
+    "tuning_ndcg10": 0.10321994687343618
+  }
+]
