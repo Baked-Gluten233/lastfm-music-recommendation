@@ -45,9 +45,9 @@ display(runs[['family','lr','seed','selected_epoch','ndcg@10','recall@10','train
 - 内容双塔：独立用户编码与标签内容编码，以归一化向量点积检索。艺人塔没有 artistID embedding，而是训练允许标签的稀疏线性映射加非线性。
 
 损失、学习率、正则、epoch与选择规则见实际配置。改变损失/特征与结构同时发生，所以不能把任何差异归因于某一个因素。'''),
-      nbf.v4.new_code_cell('''protocol=json.loads((ROOT/'outputs/phase2/protocol.json').read_text())
+      nbf.v4.new_code_cell('''protocol=json.loads((ROOT/'outputs/phase2/protocol.json').read_text(encoding="utf-8"))
 display(pd.Series(protocol,name='recorded_protocol'))
-content=json.loads((ROOT/'outputs/phase2/content_audit.json').read_text())
+content=json.loads((ROOT/'outputs/phase2/content_audit.json').read_text(encoding="utf-8"))
 display(pd.Series(content,name='training_only_content_audit'))'''),
       nbf.v4.new_markdown_cell('''## 3. 防泄漏与内容局限
 

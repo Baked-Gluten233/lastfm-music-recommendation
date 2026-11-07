@@ -17,8 +17,8 @@ def freeze():
     if path.exists():
         raise RuntimeError('A final decision already exists; do not silently overwrite it')
     runs=pd.read_csv(ROOT/'outputs/phase2/all_runs.csv')
-    configs=json.loads((ROOT/'outputs/phase2/selected_configs.json').read_text())
-    leader=json.loads((ROOT/'outputs/phase2/validation_recommendation.json').read_text())
+    configs=json.loads((ROOT/'outputs/phase2/selected_configs.json').read_text(encoding="utf-8"))
+    leader=json.loads((ROOT/'outputs/phase2/validation_recommendation.json').read_text(encoding="utf-8"))
     if leader['current_validation_leader']!='itemcf_n100_s10':
         raise ValueError('Validation evidence differs from the reviewed final choice')
     frozen=[]
@@ -30,7 +30,7 @@ def freeze():
         frozen.append({'family':config['family'],'dim':int(config['dim']),'lr':float(config['lr']),
                        'validation_selected_epochs':epochs,'final_epochs':int(np.median(epochs)),
                        'seeds':[42,43,44]})
-    manifest=json.loads((ROOT/'outputs/split_manifest.json').read_text())
+    manifest=json.loads((ROOT/'outputs/split_manifest.json').read_text(encoding="utf-8"))
     validation=pd.read_csv(ROOT/'data/processed/validation.csv')
     decision={
         'frozen_at_utc':datetime.now(timezone.utc).isoformat(),

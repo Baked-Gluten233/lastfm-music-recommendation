@@ -16,7 +16,7 @@ from musicrec.validation import require
 def replay(root=ROOT):
     root=Path(root);output=root/'outputs/phase2';torch.set_num_threads(4)
     data=prepare(root)
-    selected=json.loads((output/'selected_configs.json').read_text())
+    selected=json.loads((output/'selected_configs.json').read_text(encoding="utf-8"))
     all_runs=pd.read_csv(output/'all_runs.csv')
     if {c['family'] for c in selected}!={'bpr_mf','neumf','content_two_tower'} or len(selected)!=3:
         raise AssertionError('Replay requires exactly the three selected model families')

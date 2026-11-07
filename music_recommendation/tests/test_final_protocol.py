@@ -32,6 +32,6 @@ class FinalProtocolTests(unittest.TestCase):
             info=fit_fixed_epochs(config,data,Path(directory),seed=99)
             self.assertEqual(info['epochs'],2)
             self.assertTrue((Path(directory)/'bpr_mf_seed99_weights.npz').is_file())
-            self.assertEqual(len((Path(directory)/'bpr_mf_seed99_refit_history.csv').read_text().splitlines()),3)
+            self.assertEqual(len((Path(directory)/'bpr_mf_seed99_refit_history.csv').read_text(encoding="utf-8").splitlines()),3)
 
 if __name__=='__main__':unittest.main()

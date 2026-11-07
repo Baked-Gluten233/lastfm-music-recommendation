@@ -14,7 +14,7 @@ from musicrec.data import save_json
 def summarize(root=ROOT):
     root=Path(root); out=root/'outputs/phase2'
     runs=pd.read_csv(out/'all_runs.csv')
-    selected=json.loads((out/'selected_configs.json').read_text())
+    selected=json.loads((out/'selected_configs.json').read_text(encoding="utf-8"))
     rows=[];groups=[]
     metrics=['ndcg@10','recall@10','precision@10','hit_rate@10','catalogue_coverage@10','ndcg@20']
     for choice in selected:
@@ -39,7 +39,7 @@ def summarize(root=ROOT):
     neural=pd.DataFrame(rows);neural.to_csv(out/'selected_seed_summary.csv',index=False)
     pd.DataFrame(groups).to_csv(out/'selected_user_groups.csv',index=False)
     base=pd.read_csv(root/'outputs/validation_results.csv')
-    cf=json.loads((root/'outputs/selection.json').read_text())['selected_itemcf_baseline']
+    cf=json.loads((root/'outputs/selection.json').read_text(encoding="utf-8"))['selected_itemcf_baseline']
     base=base[base.model.isin(['popularity',cf])]
     comparison=pd.concat([base[['model']+metrics].assign(seeds=1),neural],ignore_index=True)
     comparison.to_csv(out/'five_model_validation_comparison.csv',index=False)

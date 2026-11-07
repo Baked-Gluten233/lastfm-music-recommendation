@@ -2,7 +2,7 @@
   "snapshot": "Complete project with validation isolation and Python -O safety repairs",
   "original_snapshot_commit": "e4c247595e727a1109298278cf356323698bc701",
   "file_count": 211,
-  "total_bytes": 65825705,
+  "total_bytes": 65826121,
   "historical_data_weights_outputs_notebooks_unchanged": true,
   "validation": {
     "normal_unit_tests": 29,
@@ -1119,9 +1119,9 @@
     },
     {
       "path": "music_recommendation/scripts/create_final_notebook.py",
-      "bytes": 5782,
-      "sha256": "8b9b3ff92a4da923dc7a350b3a3e56f9b3cd3ee3af21bed376000244ad35ea70",
-      "git_blob_sha": "11013c40c0ff50a7f80e8d72582354e53958b331"
+      "bytes": 5878,
+      "sha256": "7daa6816d449cb54e9a181d10a4c702c5974bbbf16cc5732ab8575c447aa52a9",
+      "git_blob_sha": "56e6a9d43ab261b8188ec0110c9b5561a5ec7216"
     },
     {
       "path": "music_recommendation/scripts/create_notebook.py",
@@ -1131,9 +1131,9 @@
     },
     {
       "path": "music_recommendation/scripts/create_phase2_notebook.py",
-      "bytes": 7442,
-      "sha256": "0d22db59fe236f6f62f974636ae18bc18b673efdf90956f8b48b52eca20c6738",
-      "git_blob_sha": "b06b2e81c15bb1c15195e59582f6e5bcc1dac1cc"
+      "bytes": 7474,
+      "sha256": "70aaddfa2129b8e1f68180d3dd9427bdf72ed2939733cfc369eb3730a97bd2ae",
+      "git_blob_sha": "2e9b9a2ac70a4e05d2644200e9d414ad87282f47"
     },
     {
       "path": "music_recommendation/scripts/download_data.py",
@@ -1149,15 +1149,15 @@
     },
     {
       "path": "music_recommendation/scripts/freeze_final_decision.py",
-      "bytes": 4769,
-      "sha256": "5b540a9fb84b4546ca632ad21e7e9d8ac292da381e2c80d9ca20492dd5aad889",
-      "git_blob_sha": "5e1de420ddec8611b3201388c1fb1368d91c4caf"
+      "bytes": 4817,
+      "sha256": "5ce65b3851e2c771587976c3c18f3c258fcdec9807b826ea05a3d1f047e3a288",
+      "git_blob_sha": "2fab1169a748608c42b094fa4b7910055f1959ac"
     },
     {
       "path": "music_recommendation/scripts/replay_phase2.py",
-      "bytes": 2341,
-      "sha256": "30fce3ed2ad221a0329a4afa3575c4a32052fc6007326979e14e7c46c92e9bd6",
-      "git_blob_sha": "9669f20cd6d776b51ee57ab53fec6c1b6197e7e0"
+      "bytes": 2357,
+      "sha256": "863c3ac47a5d2d0bb83b6fe7229d1703fed6d44567a5ac22425d1b879f3e5731",
+      "git_blob_sha": "8afd1226cb43226e10f50b1ad7d3346eb09d2e9a"
     },
     {
       "path": "music_recommendation/scripts/run_final_once.py",
@@ -1179,15 +1179,15 @@
     },
     {
       "path": "music_recommendation/scripts/summarize_final.py",
-      "bytes": 7081,
-      "sha256": "14d1f1a07b8f4b42db5d6845f125cb5f5dc6bd4e2154d05a4baec9873ad35513",
-      "git_blob_sha": "1386946c85629f538f8d6c2ab9a6ab6ea78ec0c1"
+      "bytes": 7113,
+      "sha256": "54946813ad51e6317dad163145edf12beff98397efdf4a80911063632d1e4504",
+      "git_blob_sha": "27270ce284e54f66e5dbc4ce6ddbd458d8693fb1"
     },
     {
       "path": "music_recommendation/scripts/summarize_phase2.py",
-      "bytes": 5275,
-      "sha256": "0e20feb9621c10be9ca729f1c4b6591bfd9a3f2ef719e4697a857746651a825a",
-      "git_blob_sha": "4c25c29200f4220c0a6c0795d7db9ca243fb1ab9"
+      "bytes": 5307,
+      "sha256": "491503ca1462afc7092c11b9ace74a30e0d4ee10c98a851d31a3169f70e85fd3",
+      "git_blob_sha": "489c15eb76c8c31fac71e28b6b425af698f8a822"
     },
     {
       "path": "music_recommendation/scripts/verify_windows.py",
@@ -1221,9 +1221,9 @@
     },
     {
       "path": "music_recommendation/src/musicrec/final_evaluation.py",
-      "bytes": 13947,
-      "sha256": "4c90335402eb22ad16804a22a946a3177948314e6683b71fcf8160eee9385f99",
-      "git_blob_sha": "8648b01045e5144f030c695eb9c91289d945dc69"
+      "bytes": 14011,
+      "sha256": "639a00e0d6dc4297f8e8c46947bf2a358229520a8df96e4451e21f6c38b53e1b",
+      "git_blob_sha": "6e55925b1b78eedbf128bf4639d50726c9c32aaa"
     },
     {
       "path": "music_recommendation/src/musicrec/models.py",
@@ -1239,9 +1239,9 @@
     },
     {
       "path": "music_recommendation/src/musicrec/phase2.py",
-      "bytes": 9874,
-      "sha256": "a76ceb72b084c1d44669cafa812d2ef756ba570ba9fb60a2a578f2ecd4b5c5de",
-      "git_blob_sha": "c0cb69512f87e9f657b7c5eeba8a584993893553"
+      "bytes": 9906,
+      "sha256": "ffeff53bb2c553198ae9f3e81966c8e2aaba1d58482f4123291684d98737fcb1",
+      "git_blob_sha": "57931b9a42c59546aee553662e3918ee5f7ec022"
     },
     {
       "path": "music_recommendation/src/musicrec/pipeline.py",
@@ -1257,9 +1257,9 @@
     },
     {
       "path": "music_recommendation/tests/test_final_protocol.py",
-      "bytes": 1970,
-      "sha256": "96321ccf5b7392119c4b8f6467ef22c9c687203abf0fd7bbafa033581595b393",
-      "git_blob_sha": "7a113593e3cb046d57f9842f7087ca969c63b3cd"
+      "bytes": 1986,
+      "sha256": "e5a5e4e5d1232144478702517d2795fbeca8d46fcc3e71de1581fd191ad009ca",
+      "git_blob_sha": "85415afbaba6f05ea8d9af636c21e414f62c9b16"
     },
     {
       "path": "music_recommendation/tests/test_neural.py",
@@ -1275,9 +1275,9 @@
     },
     {
       "path": "music_recommendation/tests/test_validation_safety.py",
-      "bytes": 8547,
-      "sha256": "40171b82e4369042eed62ada6802ad8a0b91425b623df40e5e4efa0ccbc432c3",
-      "git_blob_sha": "b750fddca5f5126b36191f97159c60923cb23ad6"
+      "bytes": 8595,
+      "sha256": "1ec9634c48d34d635532ab9546ce7be8de7d65eeab6bbbb13fe347d36a4cb6e0",
+      "git_blob_sha": "96501e13f8bcfe540d1aacbba3760253c8f07d79"
     }
   ]
 }

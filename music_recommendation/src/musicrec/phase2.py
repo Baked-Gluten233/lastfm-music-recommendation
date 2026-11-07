@@ -30,8 +30,8 @@ GRID = [
 
 
 def prepare(root):
-    manifest=json.loads((root/'outputs/split_manifest.json').read_text())
-    audit=json.loads((root/'outputs/data_audit.json').read_text())
+    manifest=json.loads((root/'outputs/split_manifest.json').read_text(encoding="utf-8"))
+    audit=json.loads((root/'outputs/data_audit.json').read_text(encoding="utf-8"))
     for filename in ('artists.dat','user_taggedartists-timestamps.dat'):
         if sha256(root/'data/raw/hetrec2011-lastfm-2k'/filename) != audit['raw_files_sha256'][filename]:
             raise ValueError('Original input changed: '+filename)

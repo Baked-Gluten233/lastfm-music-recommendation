@@ -28,8 +28,8 @@ def utcnow():
 def verify_freeze(root):
     output=root/'outputs/final'
     decision_path=output/'frozen_decision.json'
-    decision=json.loads(decision_path.read_text())
-    receipt=json.loads((output/'freeze_receipt.json').read_text())
+    decision=json.loads(decision_path.read_text(encoding="utf-8"))
+    receipt=json.loads((output/'freeze_receipt.json').read_text(encoding="utf-8"))
     if sha256(decision_path)!=receipt['decision_sha256']:
         raise ValueError('Frozen decision has changed')
     for filename,digest in decision['evidence_sha256'].items():
@@ -40,7 +40,7 @@ def verify_freeze(root):
 
 def prepare_known_history(root):
     """Read train and validation only. No test-file path in this function."""
-    manifest=json.loads((root/'outputs/split_manifest.json').read_text())
+    manifest=json.loads((root/'outputs/split_manifest.json').read_text(encoding="utf-8"))
     frames=[]
     for split in ('train','validation'):
         path=root/f'data/processed/{split}.csv'
@@ -50,7 +50,7 @@ def prepare_known_history(root):
     known=pd.concat(frames,ignore_index=True).sort_values(['userID','artistID']).reset_index(drop=True)
     if known.duplicated(['userID','artistID']).any():
         raise ValueError('Known-history duplicate pair')
-    audit=json.loads((root/'outputs/data_audit.json').read_text())
+    audit=json.loads((root/'outputs/data_audit.json').read_text(encoding="utf-8"))
     raw=root/'data/raw/hetrec2011-lastfm-2k'
     for filename in ('artists.dat','user_taggedartists-timestamps.dat'):
         if sha256(raw/filename)!=audit['raw_files_sha256'][filename]:

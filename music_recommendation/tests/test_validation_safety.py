@@ -54,7 +54,7 @@ with tempfile.TemporaryDirectory() as temporary:
     def test_runtime_sources_have_no_asserts(self):
         for directory in ('src', 'scripts'):
             for path in (ROOT/directory).rglob('*.py'):
-                tree=ast.parse(path.read_text())
+                tree=ast.parse(path.read_text(encoding="utf-8"))
                 self.assertFalse(any(isinstance(node, ast.Assert) for node in ast.walk(tree)), str(path))
 
     def test_template_test_failures_propagate_under_optimization(self):
@@ -103,7 +103,7 @@ subprocess.run=lambda *a,**kw: subprocess.CompletedProcess(['synthetic-failure']
                 def execute(self, **kwargs):
                     workspaces.append(self.work)
                     self_outer.assertNotEqual(self.work,source)
-                    self_outer.assertEqual((self.work/'outputs/frozen.txt').read_text(),'original evidence')
+                    self_outer.assertEqual((self.work/'outputs/frozen.txt').read_text(encoding="utf-8"),'original evidence')
                     for name in verify_windows.EXCLUDED:
                         self_outer.assertFalse((self.work/'outputs'/name).exists())
                     # Exercise the injected interpreter guard, including optimized mode.
@@ -138,7 +138,7 @@ subprocess.run=lambda *a,**kw: subprocess.CompletedProcess(['synthetic-failure']
                  patch.object(verify_windows.subprocess,'run',return_value=failure):
                 with self.assertRaisesRegex(RuntimeError,'Unit tests failed'):
                     verify_windows.main()
-            result=json.loads((root/'outputs/windows_native_verification/status.json').read_text())
+            result=json.loads((root/'outputs/windows_native_verification/status.json').read_text(encoding="utf-8"))
             self.assertEqual(result['status'],'failed')
             self.assertFalse(result['native_kernel_verified'])
 

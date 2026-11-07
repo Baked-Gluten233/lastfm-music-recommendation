@@ -18,9 +18,9 @@ from musicrec.final_evaluation import verify_freeze
 def verify_and_summarize(root=ROOT):
     root=Path(root);out=root/'outputs/final'
     decision,receipt=verify_freeze(root)
-    state=json.loads((out/'evaluation_state.json').read_text())
+    state=json.loads((out/'evaluation_state.json').read_text(encoding="utf-8"))
     if state['status']!='completed':raise ValueError('Final evaluation is not complete')
-    manifest=json.loads((out/'final_checkpoint_manifest.json').read_text())
+    manifest=json.loads((out/'final_checkpoint_manifest.json').read_text(encoding="utf-8"))
     require(len(manifest)==11 and state['evaluated_runs']==11, "Consistency check failed: len(manifest)==11 and state['evaluated_runs']==11")
     require(datetime.fromisoformat(state['all_checkpoints_saved_at_utc'])<datetime.fromisoformat(state['test_evaluation_started_at_utc']), "Consistency check failed: datetime.fromisoformat(state['all_checkpoints_saved_at_utc'])<datetime.fromisoformat(state['test_evaluation_started_at_utc'])")
     require(datetime.fromisoformat(decision['frozen_at_utc'])<datetime.fromisoformat(state['refit_started_at_utc']), "Consistency check failed: datetime.fromisoformat(decision['frozen_at_utc'])<datetime.fromisoformat(state['refit_started_at_utc'])")
