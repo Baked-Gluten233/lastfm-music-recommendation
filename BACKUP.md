@@ -1,18 +1,27 @@
-# 私有项目备份
+# 项目备份与恢复
 
-完整项目位于 [`music_recommendation/`](music_recommendation/)。克隆仓库后进入该目录，按 [项目 README](music_recommendation/README.md) 恢复环境；不需要 Last.fm 账号或密钥。仓库根 README 与最初提交保持不变。
+完整项目位于 [music_recommendation/](music_recommendation/)，环境安装与入口见 [项目 README](music_recommendation/README.md)。仓库包含原始数据及许可、固定切分、代码、历史 Notebook、权重、冻结成果，以及新增标签特征对照和 Windows 验收证据。
 
-当前包含211个项目文件：代码、带历史真实输出的 Notebook、原始数据及许可、固定拆分、模型权重、实验结果、冻结记录、图表，以及验收安全修复和测试证据。逐文件 SHA-256 与 Git blob SHA 见 [BACKUP_MANIFEST.json](BACKUP_MANIFEST.json)。不包含虚拟环境、缓存、凭据、课程附件、报告或 PPT。
+## 历史恢复点
 
-## 恢复点与修复
+- 原始完整快照为 `e4c247595e727a1109298278cf356323698bc701`。
+- 本轮改进的基线为 `5f0be782e6b50ea83efaf4e9ccbe954effb75b90`，包含独立验收副本、优化模式防护和 Windows UTF-8 修复。
+- 原五模型实验在 Linux 上训练和评估。历史环境字段按其所属实验解释，本机验收由独立状态文件记录。
 
-- 原始可用快照：提交 `e4c247595e727a1109298278cf356323698bc701`，原203文件完整保存，可单独恢复。
-- 后续修复：Windows验收的测试及每本 Notebook 均使用独立临时副本；关键检查不受 Python -O 优化影响，失败会正确退出。
-- 普通模式和 Python -O 模式各29项回归通过。另在隔离副本核对11个最终checkpoint、冻结证据、时间顺序和保存的聚合结果。
-- 原始数据、模型权重、历史指标、冻结证据和带输出 Notebook 均未修改；没有再次训练或评分保留测试集。修复说明见 [验收安全记录](music_recommendation/docs/validation_safety.md)。
+## 新增成果与验收
 
-## 尚未验证
+标签特征审计及六次验证集对照位于 `music_recommendation/outputs/content_feature_audit/`，方法和运行结果见 [特征审计文档](music_recommendation/docs/content_feature_audit.md)。新实验记录固定输入、源码哈希、用户分折、特征、学习曲线、权重、逐用户指标和重放结果。
 
-Windows实机、原生Jupyter完整验收仍未完成。项目内 `.github/workflows/` 不在仓库顶层，作为原配置备份保存，未启用或触发。旧Notebook保留历史输出；安全验收入口会从修复后的模板生成新的副本。
+Windows 验收位于 `music_recommendation/outputs/windows_native_verification/`，执行状态见 [status.json](music_recommendation/outputs/windows_native_verification/status.json)，范围与证据见 [验收文档](music_recommendation/docs/validation_safety.md)。统一入口检查依赖、普通及优化测试、三个原生 Jupyter Notebook，以及受保护成果的前后哈希。
 
-HetRec 2011 Last.fm 数据仅限非商业用途，保留原数据许可与来源说明。使用新实验目录进行完整复现，不应覆盖本备份中的冻结成果。
+仓库根 `.github/workflows/windows-verification.yml` 提供手动触发入口。云端 Actions 状态与本机实测分别记录。
+
+## 完整性与复现
+
+[BACKUP_MANIFEST.json](BACKUP_MANIFEST.json) 列出交付文件的字节数、SHA-256 和 Git blob SHA，并汇总实际文件数量与验证状态。清单覆盖项目及仓库根交付文件，自身通过 Git 版本追踪。
+
+`.gitattributes` 为源码、根文档与历史日志固定 LF。原始数据及新增冻结实验、验收证据目录以原始字节归档，保留原生平台生成的换行与校验值。克隆后的数据、权重及冻结成果应与清单一致。
+
+完整新实验使用独立工作副本。随包历史原始数据、切分、权重、冻结成果和原 Notebook 受完整性校验保护。原始数据的非商业使用条件见随包许可说明。
+
+虚拟环境、工具缓存、Jupyter 运行时连接文件及私人配置保存在本地运行目录。

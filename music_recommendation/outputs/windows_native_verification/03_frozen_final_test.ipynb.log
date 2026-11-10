@@ -1,0 +1,9 @@
+{
+  "name": "03_frozen_final_test.ipynb",
+  "native_kernel": "passed",
+  "final_test_guarded": true,
+  "duration_seconds": 53.21858939999947,
+  "code_cells": 8,
+  "error_outputs": 0,
+  "log": "03_frozen_final_test.ipynb.log"
+}

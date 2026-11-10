@@ -11,7 +11,7 @@ def main():
 
 主模型在看测试前固定为ItemCF（100邻居，shrinkage=10）。三种神经模型是预先指定的对照，不根据测试挑种子或换赢家。首次实验/干净复现实验由 scripts/freeze_final_decision.py 与 scripts/run_final_once.py 驱动；已完成目录有防止意外再次评估的状态保护。
 
-本页实际用IPython进程内逐格执行；Windows实机与原生Jupyter内核未验证。AI辅助使用和真实人工贡献需如实披露。'''),
+历史随包输出来自IPython进程内逐格执行。本模板生成新的隔离验收副本，Windows原生Jupyter内核的执行结果与环境见 outputs/windows_native_verification/status.json。AI辅助使用和真实人工贡献需如实披露。'''),
         nbf.v4.new_code_cell('''from pathlib import Path
 import sys,json,subprocess
 import pandas as pd
@@ -62,7 +62,7 @@ for case in cases:
 
 最终选择来自验证，测试用于一次性报告。ItemCF在这份小规模数据、固定搜索预算和全目录协议下表现最好，不代表神经网络一般无用。内容双塔覆盖更广，但准确率较低；所有新物品缺少独立内容，不能宣称解决冷启动。
 
-尚未验证Windows实机、原生Jupyter内核、线上效果、多随机拆分与更大调参空间；不得写成已完成。AI生成/辅助部分和成员实际人工工作必须清楚区分。'''),
+Windows实机与原生Jupyter内核的已执行范围见独立验收记录。线上效果、多随机拆分与更大调参空间仍需另外研究。AI生成/辅助部分和成员实际人工工作必须清楚区分。'''),
         nbf.v4.new_code_cell('''tests=subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-v'],cwd=ROOT,capture_output=True,text=True)
 print(tests.stdout+tests.stderr)
 tests.check_returncode()

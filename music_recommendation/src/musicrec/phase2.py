@@ -17,7 +17,8 @@ from .content import build_tag_features
 from .data import indexed_matrix,save_json,sha256
 from .evaluation import evaluate
 from .models import popularity_scores
-from .neural import BPRMF,NeuMF,ContentTwoTower,sample_negatives,score_catalogue
+from .neural import (BPRMF,NeuMF,ContentTwoTower,CrossFittedContentTwoTower,
+                     sample_negatives,score_catalogue)
 
 GRID = [
     {'family':'bpr_mf','dim':32,'lr':.005},
@@ -61,6 +62,9 @@ def make_model(config,data):
     if family=='neumf': return NeuMF(users,items,dim)
     if family=='content_two_tower':
         return ContentTwoTower(users,data['feature_ids'],data['feature_weights'],len(data['vocabulary']),dim)
+    if family=='content_two_tower_audit':
+        return CrossFittedContentTwoTower(users,data['feature_ids'],data['feature_weights'],
+                                         len(data['vocabulary']),data['user_folds'],dim)
     raise ValueError(family)
 
 

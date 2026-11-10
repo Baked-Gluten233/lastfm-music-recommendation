@@ -1,0 +1,7 @@
+{
+  "stage": "validation_complete",
+  "training_runs": 6,
+  "test_labels_read": false,
+  "test_metrics_evaluated": false,
+  "replay_passed": true
+}

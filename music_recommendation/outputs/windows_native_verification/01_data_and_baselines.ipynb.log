@@ -1,0 +1,9 @@
+{
+  "name": "01_data_and_baselines.ipynb",
+  "native_kernel": "passed",
+  "final_test_guarded": true,
+  "duration_seconds": 76.26630690000457,
+  "code_cells": 10,
+  "error_outputs": 0,
+  "log": "01_data_and_baselines.ipynb.log"
+}

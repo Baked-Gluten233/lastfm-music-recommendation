@@ -12,7 +12,7 @@ def main():
 
 此处保留阶段一的学习过程和当时状态；第二阶段已另行完成三个模型，见 02_model_iterations.ipynb，不应把本页“尚未训练”理解为最新项目状态。
 
-交付验证方式：IPython 进程内按序执行全部代码格并捕获真实输出。当前环境无法启动需本地通信的原生 Jupyter 内核，因此原生 Restart-and-Run-All 与 Windows 实机运行尚未验证。
+历史随包输出来自 IPython 进程内执行。本模板用于生成新的隔离验收副本，原生 Windows Jupyter 执行结果见 outputs/windows_native_verification/status.json，其中记录环境、源码摘要和逐项结果。
 
 研究问题：在累计听歌记录的随机留出协议下，能否为已有用户找回未见过的艺人偏好？不声称预测下一次收听。"""),
         nbf.v4.new_code_cell("""from pathlib import Path
@@ -96,7 +96,7 @@ print('Windows 实际运行:', experiment['runtime']['windows_execution_verified
 
 接下来以真实实验实现 BPR-MF、NeuMF、内容双塔并比较。标签特征必须仅由允许的训练信息构造，目录外标签先隔离。最终模型和超参冻结后才执行统一测试。没有真实结果的单元格不得用“预计提升”补齐。
 
-**待成员理解/完成：**解释指标、复跑 Windows、分析低活跃用户、核查标签编码与覆盖、填写真实分工和 AI 使用。参见 docs/model_plan.md 与 docs/learning_and_contributions.md。
+**成员学习与记录：**解释指标、分析低活跃用户、核查标签编码与覆盖、填写真实分工和 AI 使用；Windows 验收结果单独记录。参见 docs/model_plan.md 与 docs/learning_and_contributions.md。
 
 来源：[GroupLens HetRec](https://grouplens.org/datasets/hetrec-2011/)，原始 README 与 docs/research.md。"""),
     ]

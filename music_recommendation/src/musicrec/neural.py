@@ -73,6 +73,45 @@ class ContentTwoTower(nn.Module):
         return 10*(users @ items.T)
 
 
+class CrossFittedContentTwoTower(ContentTwoTower):
+    """Shared towers with a fixed content bank for each user's assigned fold.
+
+    A one-bank instance is the matched global-feature control. Parameters have
+    identical shapes in both policies. The original model and checkpoints keep
+    their existing constructor and state-dict layout.
+    """
+    def __init__(self, users, feature_ids, feature_weights, vocabulary_size,
+                 user_folds, dim=32):
+        if feature_ids.ndim != 3 or feature_ids.shape != feature_weights.shape:
+            raise ValueError('Feature banks must have matching fold/item/tag shapes')
+        if user_folds.shape != (users,):
+            raise ValueError('Each user needs exactly one feature-bank assignment')
+        banks, items, tags = feature_ids.shape
+        if banks < 1 or items < 1 or tags < 1:
+            raise ValueError('Feature banks must be nonempty')
+        if np.any(user_folds < 0) or np.any(user_folds >= banks):
+            raise ValueError('User fold is outside the feature banks')
+        super().__init__(users, feature_ids.reshape(banks*items, tags),
+                         feature_weights.reshape(banks*items, tags), vocabulary_size, dim)
+        self.register_buffer('user_folds', torch.from_numpy(user_folds))
+        self.catalogue_size = items
+        self.bank_count = banks
+
+    def forward(self, users, items):
+        bank_items = self.user_folds[users]*self.catalogue_size + items
+        return super().forward(users, bank_items)
+
+    def all_scores(self):
+        users = self.encode_users(torch.arange(self.user.num_embeddings))
+        scores = users.new_empty((len(users), self.catalogue_size))
+        item_ids = torch.arange(self.catalogue_size)
+        for fold in range(self.bank_count):
+            selected = self.user_folds == fold
+            items = self.encode_items(item_ids + fold*self.catalogue_size)
+            scores[selected] = 10*(users[selected] @ items.T)
+        return scores
+
+
 def sample_negatives(users, train_seen, warm_items, rng):
     """Uniform train-warm artists not in each user's TRAIN history; no oracle."""
     if np.any(train_seen.sum(axis=1)[users] >= len(warm_items)):

@@ -11,7 +11,7 @@ def main():
 
 此页保留阶段二开发时的记录。随后已另行冻结并完成独立测试，最新结果见03_frozen_final_test.ipynb；本页的测试封存表述是历史开发状态。
 
-测试集仍封存。交付执行方式是 IPython 进程内顺序运行真实代码格，原生 Jupyter 内核与 Windows 实机运行未验证。AI 辅助实现和解释，人工学习/验证/贡献必须如实补充。'''),
+本页重放阶段二验证实验，历史训练环境见 protocol.json。历史随包输出来自 IPython 进程内执行，当前 Windows 原生内核验收结果见 outputs/windows_native_verification/status.json。AI 辅助实现和解释，人工学习/验证/贡献必须如实补充。'''),
       nbf.v4.new_code_cell('''from pathlib import Path
 import sys,json
 import pandas as pd
@@ -87,7 +87,7 @@ test.check_returncode()'''),
 
 改进方向应先诊断训练目标与Top-K的差距、正则和负采样的敏感性、内容覆盖及过拟合，不从一次失败断言模型家族无效。进一步调参属于内部优化，不新增模型计数。
 
-正式报告/PPT和独立测试尚未完成。先冻结验证决策及最终训练轮数规则，才执行一次统一测试。成员还需Windows复跑、理解方法、填写真实贡献与AI披露。详见 docs/phase2_findings.md、phase2_method.md。'''),
+本页保留阶段二验证实验的范围。已完成的冻结决策与独立测试见第三本 Notebook；Windows 运行证据见独立验收记录。成员需理解方法、填写真实贡献与AI披露。详见 docs/phase2_findings.md、phase2_method.md。'''),
     ]
     notebook=nbf.v4.new_notebook(cells=cells,metadata={'kernelspec':{'display_name':'Python 3 (ipykernel)','language':'python','name':'python3'},'language_info':{'name':'python','version':'3.12'}})
     p=ROOT/'notebooks/02_model_iterations.ipynb';nbf.write(notebook,p);print(p)
