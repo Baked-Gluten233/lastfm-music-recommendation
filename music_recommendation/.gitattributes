@@ -6,6 +6,14 @@
 *.csv text eol=lf
 *.ipynb text eol=lf
 *.yml text eol=lf
+*.log text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+# Raw archive contents retain their original bytes, including the license readme.
+data/raw/** -text
+# Frozen native-run evidence retains its recorded bytes and checksums.
+outputs/content_feature_audit/** -text whitespace=cr-at-eol
+outputs/windows_native_verification/** -text whitespace=cr-at-eol
 *.dat -text
 *.npz binary
 *.npy binary

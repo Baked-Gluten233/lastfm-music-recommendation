@@ -1,4 +1,4 @@
-# Target: 64-bit CPython 3.12, CPU only. Linux tested; Windows execution pending.
+# Target: 64-bit CPython 3.12, CPU only. Native Windows acceptance uses scripts/verify_windows.py.
 numpy==2.3.5
 scipy==1.17.0
 pandas==2.2.3

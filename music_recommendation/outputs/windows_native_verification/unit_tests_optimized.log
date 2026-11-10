@@ -1,0 +1,104 @@
+content_two_tower_audit_lr0.003_seed42 epoch 01: loss=0.78370, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 02: loss=0.56224, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 01: loss=0.78370, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 02: loss=0.56224, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 04: loss=0.35957, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 08: loss=0.15370, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 12: loss=0.01681, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 16: loss=0.00026, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 04: loss=0.29278, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 08: loss=0.06663, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 12: loss=0.00142, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 16: loss=0.00016, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 04: loss=0.30319, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 08: loss=0.13375, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 12: loss=0.00546, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 16: loss=0.00006, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 04: loss=0.38508, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 08: loss=0.13249, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 12: loss=0.01875, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed42 epoch 16: loss=0.00096, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 04: loss=0.26299, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 08: loss=0.05436, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 12: loss=0.00295, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed43 epoch 16: loss=0.00021, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 04: loss=0.37741, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 08: loss=0.09888, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 12: loss=0.00397, validation NDCG@10=0.630930, scoring=0.00s
+content_two_tower_audit_lr0.003_seed44 epoch 16: loss=0.00060, validation NDCG@10=0.630930, scoring=0.00s
+Replayed global 42 0.6309297535714576
+Replayed global 43 0.6309297535714576
+Replayed global 44 0.6309297535714576
+Replayed crossfit 42 0.6309297535714576
+Replayed crossfit 43 0.6309297535714576
+Replayed crossfit 44 0.6309297535714576
+Replayed global 42 0.6309297535714576
+Replayed global 43 0.6309297535714576
+Replayed global 44 0.6309297535714576
+Replayed crossfit 42 0.6309297535714576
+Replayed crossfit 43 0.6309297535714576
+Replayed crossfit 44 0.6309297535714576
+Final refit saved: bpr_mf_seed99, fixed epochs=2, train=0.00s
+bpr_mf_lr0.01_seed123 epoch 01: loss=0.69169, validation NDCG@10=0.666667, scoring=0.00s
+bpr_mf_lr0.01_seed123 epoch 02: loss=0.69028, validation NDCG@10=0.666667, scoring=0.00s
+bpr_mf_lr0.01_seed123 epoch 01: loss=0.69169, validation NDCG@10=0.666667, scoring=0.00s
+bpr_mf_lr0.01_seed123 epoch 02: loss=0.69028, validation NDCG@10=0.666667, scoring=0.00s
+E:\Temp\lastfm-improvements-20261110\temp\tmpm50czxt1\notebooks\01_data_and_baselines.ipynb
+E:\Temp\lastfm-improvements-20261110\temp\tmpyr97gwr_\notebooks\02_model_iterations.ipynb
+E:\Temp\lastfm-improvements-20261110\temp\tmpdiqzw5k7\notebooks\03_frozen_final_test.ipynb
+Acceptance guard installed for final test scoring
+test_crossfit_training_reproducibility_and_checkpoint_loading (test_content_crossfit.CrossFitTests.test_crossfit_training_reproducibility_and_checkpoint_loading) ... ok
+test_default_cli_audit_needs_no_test_file_and_does_not_train (test_content_crossfit.CrossFitTests.test_default_cli_audit_needs_no_test_file_and_does_not_train) ... ok
+test_donor_tags_can_change_receiving_fold (test_content_crossfit.CrossFitTests.test_donor_tags_can_change_receiving_fold) ... ok
+test_failed_training_has_explicit_status (test_content_crossfit.CrossFitTests.test_failed_training_has_explicit_status) ... ok
+test_fold_assignment_is_balanced_and_input_order_independent (test_content_crossfit.CrossFitTests.test_fold_assignment_is_balanced_and_input_order_independent) ... ok
+test_heldout_outside_catalogue_and_duplicate_tags (test_content_crossfit.CrossFitTests.test_heldout_outside_catalogue_and_duplicate_tags) ... ok
+test_legacy_model_state_dict_layout_is_unchanged (test_content_crossfit.CrossFitTests.test_legacy_model_state_dict_layout_is_unchanged) ... ok
+test_local_selection_precedes_static_coordinate_mapping (test_content_crossfit.CrossFitTests.test_local_selection_precedes_static_coordinate_mapping) ... ok
+test_own_fold_add_remove_and_duplicate_events_have_no_effect (test_content_crossfit.CrossFitTests.test_own_fold_add_remove_and_duplicate_events_have_no_effect) ... ok
+test_policy_models_have_identical_initial_parameters_and_correct_scores (test_content_crossfit.CrossFitTests.test_policy_models_have_identical_initial_parameters_and_correct_scores) ... ok
+test_six_checkpoint_replay_and_source_hash_guard (test_content_crossfit.CrossFitTests.test_six_checkpoint_replay_and_source_hash_guard) ... ok
+test_existing_evaluation_state_blocks_second_pass (test_final_protocol.FinalProtocolTests.test_existing_evaluation_state_blocks_second_pass) ... ok
+test_fixed_epochs_have_no_evaluation_callback (test_final_protocol.FinalProtocolTests.test_fixed_epochs_have_no_evaluation_callback) ... ok
+test_heldout_pair_tags_have_no_effect (test_neural.ContentTests.test_heldout_pair_tags_have_no_effect) ... ok
+test_no_content_gate (test_neural.ContentTests.test_no_content_gate) ... ok
+test_vocab_threshold_and_unknown_vector (test_neural.ContentTests.test_vocab_threshold_and_unknown_vector) ... ok
+test_bpr_formula_and_gradients (test_neural.NeuralTests.test_bpr_formula_and_gradients) ... ok
+test_cold_scores_and_batch_invariance (test_neural.NeuralTests.test_cold_scores_and_batch_invariance) ... ok
+test_content_towers_identical_content_and_factorization (test_neural.NeuralTests.test_content_towers_identical_content_and_factorization) ... ok
+test_negative_sampler_only_train_information (test_neural.NeuralTests.test_negative_sampler_only_train_information) ... ok
+test_neumf_separate_branches_train (test_neural.NeuralTests.test_neumf_separate_branches_train) ... ok
+test_training_checkpoint_reproducibility (test_neural.NeuralTests.test_training_checkpoint_reproducibility) ... ok
+test_cold_targets_retained (test_protocol.ProtocolTests.test_cold_targets_retained) ... ok
+test_cosine_shrinkage_integer_and_cold (test_protocol.ProtocolTests.test_cosine_shrinkage_integer_and_cold) ... ok
+test_directed_neighbor_orientation (test_protocol.ProtocolTests.test_directed_neighbor_orientation) ... ok
+test_exact_metrics (test_protocol.ProtocolTests.test_exact_metrics) ... ok
+test_invalid_metric_inputs (test_protocol.ProtocolTests.test_invalid_metric_inputs) ... ok
+test_neighbor_and_ks_validation (test_protocol.ProtocolTests.test_neighbor_and_ks_validation) ... ok
+test_overlap_rejected (test_protocol.ProtocolTests.test_overlap_rejected) ... ok
+test_seen_mask_and_ties (test_protocol.ProtocolTests.test_seen_mask_and_ties) ... ok
+test_split_disjoint_complete_and_order_invariant (test_protocol.ProtocolTests.test_split_disjoint_complete_and_order_invariant) ... ok
+test_bad_final_manifest_rejected_under_optimization (test_validation_safety.AcceptanceSafetyTests.test_bad_final_manifest_rejected_under_optimization) ... ok
+test_copy_rejects_workspace_inside_source (test_validation_safety.AcceptanceSafetyTests.test_copy_rejects_workspace_inside_source) ... ok
+test_duplicate_matrix_rejected_with_and_without_optimization (test_validation_safety.AcceptanceSafetyTests.test_duplicate_matrix_rejected_with_and_without_optimization) ... ok
+test_each_notebook_is_isolated_and_source_unchanged (test_validation_safety.AcceptanceSafetyTests.test_each_notebook_is_isolated_and_source_unchanged) ... ok
+test_non_windows_cannot_report_pass (test_validation_safety.AcceptanceSafetyTests.test_non_windows_cannot_report_pass) ... ok
+test_notebook_failure_propagates_and_cleans_workspace (test_validation_safety.AcceptanceSafetyTests.test_notebook_failure_propagates_and_cleans_workspace) ... ok
+test_runner_records_failure_instead_of_pass (test_validation_safety.AcceptanceSafetyTests.test_runner_records_failure_instead_of_pass) ... ok
+test_runtime_sources_have_no_asserts (test_validation_safety.AcceptanceSafetyTests.test_runtime_sources_have_no_asserts) ... ok
+test_template_test_failures_propagate_under_optimization (test_validation_safety.AcceptanceSafetyTests.test_template_test_failures_propagate_under_optimization) ... ok
+test_audit_and_acceptance_results_do_not_change_protected_snapshot (test_windows_verification.WindowsVerificationTests.test_audit_and_acceptance_results_do_not_change_protected_snapshot) ... ok
+test_dependency_pin_mismatch_is_rejected (test_windows_verification.WindowsVerificationTests.test_dependency_pin_mismatch_is_rejected) ... ok
+test_empty_or_failed_test_suite_cannot_pass (test_windows_verification.WindowsVerificationTests.test_empty_or_failed_test_suite_cannot_pass) ... ok
+test_explicit_temporary_directory_cannot_fall_back (test_windows_verification.WindowsVerificationTests.test_explicit_temporary_directory_cannot_fall_back) ... ok
+test_failed_run_still_records_integrity_changes (test_windows_verification.WindowsVerificationTests.test_failed_run_still_records_integrity_changes) ... ok
+test_integrity_detects_added_removed_and_changed_files (test_windows_verification.WindowsVerificationTests.test_integrity_detects_added_removed_and_changed_files) ... ok
+test_notebook_guard_blocks_final_scoring_entrypoints (test_windows_verification.WindowsVerificationTests.test_notebook_guard_blocks_final_scoring_entrypoints) ... ok
+test_source_digest_tracks_runtime_code_and_pins (test_windows_verification.WindowsVerificationTests.test_source_digest_tracks_runtime_code_and_pins) ... ok
+test_successful_steps_cannot_hide_integrity_or_source_changes (test_windows_verification.WindowsVerificationTests.test_successful_steps_cannot_hide_integrity_or_source_changes) ... ok
+test_test_suite_records_counts_skips_and_optimization (test_windows_verification.WindowsVerificationTests.test_test_suite_records_counts_skips_and_optimization) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 35.899s
+
+OK

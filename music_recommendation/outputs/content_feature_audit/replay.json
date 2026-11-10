@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "policy": "global",
+      "seed": 42,
+      "max_abs_metric_error": 0.0,
+      "passed": true
+    },
+    {
+      "policy": "global",
+      "seed": 43,
+      "max_abs_metric_error": 0.0,
+      "passed": true
+    },
+    {
+      "policy": "global",
+      "seed": 44,
+      "max_abs_metric_error": 0.0,
+      "passed": true
+    },
+    {
+      "policy": "crossfit",
+      "seed": 42,
+      "max_abs_metric_error": 0.0,
+      "passed": true
+    },
+    {
+      "policy": "crossfit",
+      "seed": 43,
+      "max_abs_metric_error": 0.0,
+      "passed": true
+    },
+    {
+      "policy": "crossfit",
+      "seed": 44,
+      "max_abs_metric_error": 0.0,
+      "passed": true
+    }
+  ],
+  "checkpoint_count": 6,
+  "test_labels_read": false,
+  "test_metrics_evaluated": false
+}

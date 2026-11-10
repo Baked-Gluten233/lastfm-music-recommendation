@@ -1,0 +1,54 @@
+{
+  "training_pairs": 74308,
+  "training_users": 1892,
+  "authorized_unique_tag_events": 59140,
+  "pairs_with_own_authorized_tags": 16578,
+  "own_tag_pair_fraction": 0.22309845507886095,
+  "pairs_with_own_tags_in_local_vocabulary": 15460,
+  "pairs_with_own_tags_in_top32": 15239,
+  "own_top32_pair_fraction": 0.2050788609570975,
+  "pairs_with_exclusive_own_tag_in_top32": 9662,
+  "exclusive_own_top32_pair_fraction": 0.1300263767023739,
+  "selected_artist_tag_features": 33352,
+  "selected_features_with_one_provider": 27983,
+  "static_namespace_size": 11946,
+  "fold_coverage": [
+    {
+      "fold": 0,
+      "users": 379,
+      "training_pairs": 14910,
+      "artists_with_content": 4910,
+      "training_pair_content_coverage": 0.7244802146210597
+    },
+    {
+      "fold": 1,
+      "users": 379,
+      "training_pairs": 14889,
+      "artists_with_content": 4776,
+      "training_pair_content_coverage": 0.7150245147424273
+    },
+    {
+      "fold": 2,
+      "users": 378,
+      "training_pairs": 14829,
+      "artists_with_content": 4873,
+      "training_pair_content_coverage": 0.7388900128127318
+    },
+    {
+      "fold": 3,
+      "users": 378,
+      "training_pairs": 14904,
+      "artists_with_content": 4888,
+      "training_pair_content_coverage": 0.727187332259796
+    },
+    {
+      "fold": 4,
+      "users": 378,
+      "training_pairs": 14776,
+      "artists_with_content": 4851,
+      "training_pair_content_coverage": 0.7347049269085003
+    }
+  ],
+  "interpretation": "Direct training-feature self-contribution exists; this does not establish test leakage or metric inflation.",
+  "crossfit_limitation": "Cross-fitting also reduces tag providers. Shared parameters can learn indirectly from other folds."
+}

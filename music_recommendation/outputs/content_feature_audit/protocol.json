@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-11-10T14:03:15.749274+00:00",
+  "baseline_commit": "5f0be782e6b50ea83efaf4e9ccbe954effb75b90",
+  "config": {
+    "family": "content_two_tower_audit",
+    "dim": 32,
+    "lr": 0.003
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "fold_count": 5,
+  "fold_seed": 42,
+  "fold_assignment": "sorted user IDs, NumPy default_rng(42) permutation, balanced modulo 5",
+  "namespace": "all sorted numeric tagID values from static tags.dat; coordinate identity only",
+  "policies": [
+    "global",
+    "crossfit"
+  ],
+  "feature_limits": {
+    "min_df": 2,
+    "max_features": 2000,
+    "max_tags": 32
+  },
+  "exclusion": "exclude every event authored by the receiving user fold before local vocabulary, TF, DF, IDF and top32",
+  "idf_documents": "all train-observed artists, identical in both policies",
+  "scoring": "each user uses their own bank for positive, negative and full-catalogue validation scores",
+  "max_epochs": 24,
+  "validation_every": 4,
+  "patience_evaluations": 3,
+  "selection": "validation macro NDCG@10, minimum improvement 1e-5; no new hyperparameter search",
+  "optimizer": "Adam coupled weight_decay=1e-4",
+  "batch_size": 1024,
+  "negative_sampling": "one uniform train-warm unseen-in-train item per positive each epoch",
+  "device": "cpu",
+  "threads": 4,
+  "torch": "2.9.1+cpu",
+  "numpy": "2.3.5",
+  "python": "3.12.13 (main, Jun  2 2026, 22:47:20) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "run_validation_requested": true,
+  "historical_comparability": "Both new policies share the full static embedding shape. This differs from legacy 2000-tag model initialization and parameter count.",
+  "interpretation_limit": "Provider removal and feature coverage also change. Shared model parameters permit indirect cross-fold learning.",
+  "test_labels_read": false,
+  "test_metrics_evaluated": false
+}

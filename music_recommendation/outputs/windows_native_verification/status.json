@@ -1,0 +1,154 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13 (main, Jun  2 2026, 22:47:20) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\Temp\\lastfm-windows-acceptance-20261107\\.venv\\Scripts\\python.exe",
+  "native_windows": true,
+  "pointer_bits": 64,
+  "started_at_utc": "2026-11-10T14:04:35.456222+00:00",
+  "native_kernel_verified": true,
+  "final_test_rescored": false,
+  "isolated_per_notebook": true,
+  "status": "passed",
+  "test_suites": {
+    "normal": {
+      "command": [
+        "E:\\Temp\\lastfm-windows-acceptance-20261107\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 28.146881900000153,
+      "log": "unit_tests_normal.log",
+      "tests": 50,
+      "skipped": 0,
+      "passed": true
+    },
+    "optimized": {
+      "command": [
+        "E:\\Temp\\lastfm-windows-acceptance-20261107\\.venv\\Scripts\\python.exe",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 41.15511829999741,
+      "log": "unit_tests_optimized.log",
+      "tests": 50,
+      "skipped": 0,
+      "passed": true
+    }
+  },
+  "notebooks": [
+    {
+      "name": "01_data_and_baselines.ipynb",
+      "native_kernel": "passed",
+      "final_test_guarded": true,
+      "duration_seconds": 76.26630690000457,
+      "code_cells": 10,
+      "error_outputs": 0,
+      "log": "01_data_and_baselines.ipynb.log"
+    },
+    {
+      "name": "02_model_iterations.ipynb",
+      "native_kernel": "passed",
+      "final_test_guarded": true,
+      "duration_seconds": 75.52246849999938,
+      "code_cells": 9,
+      "error_outputs": 0,
+      "log": "02_model_iterations.ipynb.log"
+    },
+    {
+      "name": "03_frozen_final_test.ipynb",
+      "native_kernel": "passed",
+      "final_test_guarded": true,
+      "duration_seconds": 53.21858939999947,
+      "code_cells": 8,
+      "error_outputs": 0,
+      "log": "03_frozen_final_test.ipynb.log"
+    }
+  ],
+  "temporary_directory": "E:\\Temp\\lastfm-improvements-20261110\\temp",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "torch": "2.9.1+cpu",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.29.5",
+    "jupyterlab": "4.4.10"
+  },
+  "source": {
+    "sha256": "36aa7ff35e607821a0fb03396931252abc047f697ccbe69fad7cf059e8f987e1",
+    "files": {
+      "src/musicrec/__init__.py": "6b63db7394041490e291711f913e5ccb6031103bf5b2e4e226930e35ba6d8b82",
+      "src/musicrec/content.py": "d84964a2aaef64b24f51e4cd8577acda261dee982ea58abde28972c05f7ebcbf",
+      "src/musicrec/content_feature_audit.py": "43fb87c8f4018e8fc1c5e80cf4049a7f9c47b8da745c6dd78d798323e928d3b6",
+      "src/musicrec/data.py": "7f8fdd18c8b0598cdd2e1b3bd7a68f38229636ddd495fbc240bb1787717a1f2b",
+      "src/musicrec/evaluation.py": "2a873a5659e33891c544df114179e620393574d0c92db5cdac1736579ba32161",
+      "src/musicrec/final_evaluation.py": "639a00e0d6dc4297f8e8c46947bf2a358229520a8df96e4451e21f6c38b53e1b",
+      "src/musicrec/models.py": "4bfcf7743142a481244c7cc52160e04ed31cd3a3a372c2108fa3a92d775e29aa",
+      "src/musicrec/neural.py": "52bef4a4cf2d8d57c0822692289ac596a8430109bed483e6bef2d4f528ed365d",
+      "src/musicrec/phase2.py": "ae3c78c5016ad4804cd7e1a5320428b2ca26d2d3d36704f8ca48605d041014d9",
+      "src/musicrec/pipeline.py": "c197f7929503b13cb7f598f4be679f8e7fa474f152247ff5a20d1fd213225643",
+      "src/musicrec/validation.py": "37492d4c9e5222994c3670ac481ca1f7cdfa3fc3802535a0d90b9a300db6889d",
+      "scripts/audit_content_features.py": "e1ca555b7808295f8b81af1fa75a74735254cac82dc969f23c0eccd91ed69619",
+      "scripts/create_final_notebook.py": "a858bcee4619af6e5faa8b8a410d10ba7e13c6c0a69b02eb07a6d3e1ff98b7fd",
+      "scripts/create_notebook.py": "e8a4b0cf13955ea718df400be879d435d5fdd984d95467e02c43b41fb7fb82ea",
+      "scripts/create_phase2_notebook.py": "c2792fc10871687794b785df2a8bd9cd2198df8dcdb492e5a86d24049862562b",
+      "scripts/download_data.py": "38a56a2df1648d7ee6d52ed6aed115bebda29132cbf2b0fd03e5ea8d966fba22",
+      "scripts/execute_notebook_inprocess.py": "db25a0fa6eecf3df6b0cde195e0fb9f7db5f70bb2a3583ebcf2e92089c694355",
+      "scripts/freeze_final_decision.py": "5ce65b3851e2c771587976c3c18f3c258fcdec9807b826ea05a3d1f047e3a288",
+      "scripts/replay_phase2.py": "863c3ac47a5d2d0bb83b6fe7229d1703fed6d44567a5ac22425d1b879f3e5731",
+      "scripts/run_final_once.py": "8c3d216a2089ae867df5345d928bfe4c1ac083f4acf3d6e4ad1748cf688c75a7",
+      "scripts/run_phase1.py": "c65014e20c2154a2e6e01780217a65749c25aa38814d2fbb6198e7372eeb072c",
+      "scripts/run_phase2.py": "2b3472d8b5f50422a47cb1e0c0b4d3fef9ec9660653bde8a2c8a9a37f4de3ffb",
+      "scripts/summarize_final.py": "54946813ad51e6317dad163145edf12beff98397efdf4a80911063632d1e4504",
+      "scripts/summarize_phase2.py": "491503ca1462afc7092c11b9ace74a30e0d4ee10c98a851d31a3169f70e85fd3",
+      "scripts/verify_windows.py": "99dc1821763c53d29010125bc3c9e254b24fe519c30a6d94da806c00564fe657",
+      "tests/test_content_crossfit.py": "dd1d7f0ce9be72f1e2d92396cde615ec885c8e70713a158aadd66aaff1cdd771",
+      "tests/test_final_protocol.py": "e5a5e4e5d1232144478702517d2795fbeca8d46fcc3e71de1581fd191ad009ca",
+      "tests/test_neural.py": "1f1418471702b04eae8945d1eebfa25c5f85e8ba821e3cce4acd85bea6b6aee2",
+      "tests/test_protocol.py": "43330e2cfa28781d7ed16b79c8f4f657c2621bebbe3ba5e8b6cf2f2bd8fd0b57",
+      "tests/test_validation_safety.py": "52ed5a3bc34948910540d0d9b5c1439ba4d518a1a4f13240bab6e45196f9de31",
+      "tests/test_windows_verification.py": "74efe4c1ce5a8d0bd0341f2b6a8928ec60c1762688697b353791a4e68452d4e9",
+      "requirements.txt": "81e8faa0829a21f9bb0bb44126e1f4d4664dc9833795991c1dda86d4b71ecb10",
+      "requirements-phase2.txt": "e310b9fa72d5fa9ee331409f039e5bebf4fffbabf2dd1f26bda1b5e87da498d2"
+    }
+  },
+  "pip_check": {
+    "command": [
+      "E:\\Temp\\lastfm-windows-acceptance-20261107\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 4.636335000002873,
+    "log": "pip_check.log"
+  },
+  "unit_tests": "passed",
+  "optimized_unit_tests": "passed",
+  "integrity": {
+    "passed": true,
+    "files_before": 170,
+    "files_after": 170,
+    "before_sha256": "9380d9f9a3af62e7977fb1c71b629a0c3501fdb330f080be632c6fea5514aff8",
+    "after_sha256": "9380d9f9a3af62e7977fb1c71b629a0c3501fdb330f080be632c6fea5514aff8",
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "source_unchanged": true,
+  "completed_at_utc": "2026-11-10T14:09:16.797212+00:00",
+  "duration_seconds": 281.5260855000015
+}

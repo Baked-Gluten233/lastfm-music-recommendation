@@ -132,15 +132,20 @@ subprocess.run=lambda *a,**kw: subprocess.CompletedProcess(['synthetic-failure']
         import json
         with tempfile.TemporaryDirectory() as temporary:
             root=Path(temporary)
-            failure=subprocess.CompletedProcess(['synthetic-tests'],3,'','fixture failure')
+            for filename in ('requirements.txt','requirements-phase2.txt'):
+                (root/filename).write_text('',encoding='utf-8')
+            failure={'passed':False,'tests':1,'skipped':0,'log':'synthetic.log'}
+            success=subprocess.CompletedProcess(['pip','check'],0,'','')
             with patch.object(verify_windows,'ROOT',root), patch.object(sys,'argv',['verify_windows']), \
                  patch.object(verify_windows.platform,'system',return_value='Windows'), \
-                 patch.object(verify_windows.subprocess,'run',return_value=failure):
+                 patch.object(verify_windows,'run_command',return_value=(success,{},'')), \
+                 patch.object(verify_windows,'run_tests',return_value=failure):
                 with self.assertRaisesRegex(RuntimeError,'Unit tests failed'):
                     verify_windows.main()
             result=json.loads((root/'outputs/windows_native_verification/status.json').read_text(encoding="utf-8"))
             self.assertEqual(result['status'],'failed')
             self.assertFalse(result['native_kernel_verified'])
+            self.assertTrue(result['integrity']['passed'])
 
     def test_copy_rejects_workspace_inside_source(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -148,10 +153,15 @@ subprocess.run=lambda *a,**kw: subprocess.CompletedProcess(['synthetic-failure']
                 verify_windows.copy_project(temporary,Path(temporary)/'nested')
 
     def test_non_windows_cannot_report_pass(self):
-        with patch.object(sys,'argv',['verify_windows']), patch.object(verify_windows.platform,'system',return_value='Linux'):
-            with self.assertRaises(SystemExit) as caught:
-                verify_windows.main()
-            self.assertIn('requires actual Windows',str(caught.exception))
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary)
+            for filename in ('requirements.txt','requirements-phase2.txt'):
+                (root/filename).write_text('',encoding='utf-8')
+            with patch.object(verify_windows,'ROOT',root), patch.object(sys,'argv',['verify_windows']), \
+                 patch.object(verify_windows.platform,'system',return_value='Linux'):
+                with self.assertRaises(SystemExit) as caught:
+                    verify_windows.main()
+                self.assertIn('requires actual Windows',str(caught.exception))
 
 
 if __name__=='__main__':

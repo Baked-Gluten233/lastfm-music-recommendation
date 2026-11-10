@@ -1,0 +1,9 @@
+{
+  "data/processed/train.csv": "50b0550fbf709fa33b62bb699b1d2d43467f1528aa181eaeaae626d19549cd75",
+  "data/processed/validation.csv": "2e31ac6628e767268c9c0d00eda6ca1d73a746e2d148c3b100af9ea0b675edb4",
+  "data/raw/hetrec2011-lastfm-2k/artists.dat": "c173881362c6b28551368fecb3c0be5a6a30a6cd859e1f5775413dfe46d48648",
+  "data/raw/hetrec2011-lastfm-2k/tags.dat": "e95175f259be4c0c47644ae23d66131cd6d5767142a1405000e79f5584691d70",
+  "data/raw/hetrec2011-lastfm-2k/user_taggedartists-timestamps.dat": "ec753318e453b15356853674b687da44d9f8c7e1215e1e0ff27aaa5f52e322bd",
+  "outputs/split_manifest.json": "d7b0f4f0ffb951d147cb354c2e83370745046e43b7b9f045decb125372a4ab88",
+  "outputs/data_audit.json": "1a02ae80d84ddc896dbce3041eeb5694baba4af4d71f4dab26ef2f890f4ce584"
+}
